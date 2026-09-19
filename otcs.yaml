@@ -1,0 +1,63 @@
+# Open Trust Commons manifest — owner-hosted (PARTICIPATION.md path A).
+# The registry fetches this file from this repository. Facts here are the
+# project's own description of itself; scores are per EVIDENCE-MODEL.md.
+otcs_version: "0.1"
+project:
+  id: kag
+  name: KAG — Kinetic Action Gateway
+  canonical_url: https://github.com/nmcitra/kag
+  status: research
+  first_public_date: "2026-09-18"
+  current_version: pre-release
+  license: Apache-2.0
+  record_state: unregistered   # becomes `registered` through a Commons proposal after the first tag
+  maintainers:
+    - name: Mike Storm (gatekeeper454)
+      representative: true
+declaration:
+  problem: >
+    Bind one signed KTP decision to one exact operation at release, hold the action to that decision through queues, retries and replay, and record whether the effect happened.
+  governed_object: [action, environment]
+  primary_users: [platform engineers, security engineers]
+  threat_or_failure_model: >
+    A decision for one action silently authorizes another; a retry or replay produces a second effect; a lost reply is read as a completed action; evidence cannot distinguish a recorded denial from non-invocation.
+  decision_outputs: [release, withhold]
+  evidence_outputs: [bound consumption decisions, dispatch observations, effect evidence with states withheld/dispatched/effect_confirmed/unknown]
+  known_limitations: >
+    Pre-release. Built first in private; no accessible release yet; no conformance run against an adopted KTP specification; no independent evaluation.
+coordinates:
+  actor: { ai_agent: 1.0, service: 0.9, delegated_subagent: 0.7, human: 0.2 }
+  authority: [mandate, capability, delegation, situational_approval]
+  action: [execute, transfer, commit]
+  environment: [system_health, reversibility, cumulative_trajectory, downstream_capacity]
+  time: [initiation, commit_point, after_action]
+functions: { interpret: 0.4, constrain: 0.9, decide: 0.6, record: 0.9 }
+ownership:
+  # The owner fills this block in their own commit. A registry entry has to
+  # carry the act of the person whose project it is.
+  owners: []
+  hosted_by: Chris Perkins (nmcitra)   # where the code lives; not an ownership claim
+  verification:
+    status: unverified
+    verified_at: null
+    evidence: []
+    verified_by: null
+freshness:
+  review_interval_days: 365
+  next_owner_confirmation: null
+  confirmation_status: PENDING
+consent:
+  # The owner fills this block in their own commit.
+  publication: null
+  metadata_use: null
+  history_preservation: null
+  mapping_and_analysis: null
+  public_correction_process: null
+  consented_at: null
+evidence: { specification: 1, implementation: 0, independent_validation: 0 }
+offers: [exact-action binding, replay and effect-budget protection, execution evidence with declared coverage]
+needs: [accessible tagged release, conformance run against an adopted KTP profile, independent evaluation]
+implements:
+  - project: ktp
+    reference: https://github.com/nmcitra/ktp-rfc
+    pinned_release: null   # the KTP tag the first release builds against

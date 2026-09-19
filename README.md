@@ -4,7 +4,7 @@ An implementation of the [Kinetic Trust Protocol](https://github.com/nmcitra/ktp
 
 **Maintainer:** Mike Storm. **Host:** the KTP project. KAG was built first by Mike; see `NOTICE` and `PROVENANCE.md`.
 
-**Status:** pre-release. Nothing here is a conformance claim until a tagged release runs the published vectors and says so.
+**Status: EXPERIMENTAL · review by 2026-12-10.** Nothing here is a conformance claim until a tagged release runs the published vectors and says so. See `GOVERNANCE.md`.
 
 ## What this repository is
 

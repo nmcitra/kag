@@ -31,5 +31,10 @@ repository. This repository carries the core and its declared interfaces.
 ## Authorship convention
 
 People are authors. Commits carry a DCO sign-off naming the person who wrote
-or is entitled to contribute the change. Tools used along the way are not
-authors and are not named in commits, files, or release notes.
+or is entitled to contribute the change. A tool is never an author.
+
+This project will be registered in the Open Trust Commons and follows its
+disclosure rule: where AI assistance was material to a contribution, the
+contribution says so, in the commit body or the PR, naming the model and
+version where practical. Disclosure is per contribution; authorship is the
+person's.

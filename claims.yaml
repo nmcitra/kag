@@ -1,0 +1,11 @@
+# Claims, per EVIDENCE-MODEL.md: one per real assertion, each with a state.
+# Evidence has to match the size of the claim.
+claims:
+  - id: kag-binds-one-action
+    statement: >
+      KAG binds one signed decision to one exact operation and records whether the effect occurred, distinguishing a withheld action from an unknown outcome.
+    state: SELF_ASSERTED
+    evidence: []
+    would_become_DOCUMENTED_when: a public artifact says so — the first tagged release with its runner output attached
+    would_become_REPRODUCIBLE_when: an outsider re-derives it from published material — the consequential-action specification's vectors run green on that tag by anyone
+    would_become_INDEPENDENTLY_TESTED_when: verified by a party who fails none of EVIDENCE-MODEL.md's independence tests (not the host, not the maintainer)

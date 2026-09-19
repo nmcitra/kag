@@ -1,0 +1,12 @@
+KAG — Kinetic Action Gateway
+
+KAG was originally developed by Mike Storm in a private repository, as an
+independent project that grew out of his KIL work, and brought into the
+open here with his authorship preserved. Hosting the code in this repository
+records that fact; it does not transfer it.
+
+Licensed under the Apache License, Version 2.0. See LICENSE.
+
+KAG implements the Kinetic Trust Protocol, published by NMCITRA under the
+Apache License 2.0: https://github.com/nmcitra/ktp-rfc
+Canonical citation: https://github.com/nmcitra/ktp-rfc/blob/main/CITATION.cff

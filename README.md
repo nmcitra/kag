@@ -47,3 +47,39 @@ Read [`CONTRIBUTING.md`](CONTRIBUTING.md). Short version: one PR per change, DCO
 ## License
 
 Apache-2.0. See `LICENSE` and `NOTICE`.
+
+## Local draft conformance reports
+
+The separate runner contribution is stacked on the source-only import until
+that import merges. It adds package-local tests and a local CLI; the
+EXPERIMENTAL status and release gates above still apply.
+
+The adapter exercises the imported reducer and modeled ledger, recorder and
+target against 20 pinned draft requests, with two independent attempts per
+case. Its initial-send oracle is test-only. Twelve modeled matches and eight
+unsupported cases are expected; qualification remains false and the explicit
+qualification command exits 1. Normal host checks test the harness and skip
+the explicit qualification run.
+
+Run offline with an existing local fixture and a new absolute report path
+outside source repositories; the report parent directory must already exist:
+
+```sh
+bash scripts/run-conformance.sh \
+  --fixture /absolute/local/consequential-action-execution-v1.json \
+  --fixture-sha256 732e293673461807d9ae491ac3d00b1c42dbb4143c5b3bf6056ab3d44993f25d \
+  --report /absolute/report-directory/new-report.json \
+  --profile-root /absolute/local/ktp-checkout
+```
+
+Profile verification requires clean KTP HEAD
+`7855966e8c061dae165d4d66ee2527bacbb59d6c`, the fixture digest above and
+execution/evidence specification SHA-256
+`51f11db0305585efba81cd99054bd6bd0ae1b87d84cc0a7c8a844879a7e64c5d`.
+The runner never downloads or modifies that checkout. Reports retain all cases
+and attempts, expected/actual values, errors, unsupported contracts, source
+HEAD and dirty state, toolchain and evidence limits. Eleven schema vectors
+and the mutation-validation vector are not executed. Output creation is
+exclusive with mode 0600; existing files, symlinks and source repository
+destinations are refused. Modeled matches are not production conformance,
+security clearance, signing approval or release qualification.

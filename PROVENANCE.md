@@ -68,3 +68,44 @@ disclosure rule: where AI assistance was material to a contribution, the
 contribution says so, in the commit body or the PR, naming the model and
 version where practical. Disclosure is per contribution; authorship is the
 person's.
+
+## Separate draft runner contribution — 2026-10-02
+
+Mike Storm directed and is accountable for this contribution. Material
+OpenAI Codex assistance (GPT-6) was used to integrate the prepared runner,
+document its limits and verify scope, host gates and the local report.
+The contributor and DCO signer is Mike Storm.
+
+Eight new files are copied exactly from prepared candidate
+`8411f358283071df75fc1dd12ce59dd4072dcee6`: fixture loader and preflight,
+package-local adapter, report and runner tests, fixture and its upstream
+NOTICE, and `scripts/run-conformance.sh`. No private preparation ancestry is
+imported. All 59 original source blobs and `SOURCE-IMPORT.json` stay unchanged.
+README and this provenance record are additive; host status, root NOTICE,
+governance, CI and host check scripts are preserved. This draft contribution
+is stacked on the source import until that PR merges.
+
+The fixture comes from canonical KTP commit
+`7855966e8c061dae165d4d66ee2527bacbb59d6c`, path
+`specifications/conformance/consequential-action-execution-v1.json`, with
+SHA-256 `732e293673461807d9ae491ac3d00b1c42dbb4143c5b3bf6056ab3d44993f25d`.
+The execution/evidence specification SHA-256 is
+`51f11db0305585efba81cd99054bd6bd0ae1b87d84cc0a7c8a844879a7e64c5d`.
+The fixture is distributed under Apache-2.0; exact upstream
+[NOTICE](internal/execution/testdata/NOTICE) is retained alongside it,
+SHA-256 `92294ef1c8e9f6a137f3036f6d8d61aa28d363ef4ed89ac311b3fb1d6611974c`.
+KTP specification attribution remains NMCITRA's and Chris Perkins's;
+[canonical citation](https://github.com/nmcitra/ktp-rfc/blob/main/CITATION.cff).
+
+The request-only adapter receives no vector IDs, labels or expected answers.
+Observed values come from imported reducer operations and modeled ledger,
+recorder and target state; the initial-send oracle remains test-only. Reports
+retain detached result snapshots and fixed error categories rather than
+arbitrary panic payloads. Required validated-permit, production time,
+persistence, live authority, authenticated non-dispatch coverage, renewed
+decision correlation and continuing safe-transition gaps remain blockers.
+Eleven schema vectors and the mutation-validation vector are not executed.
+Expected local results are 20 cases, 40 attempts, 12 modeled matches and
+8 unsupported cases, with qualification false and CLI exit 1. No production
+conformance, independent validation, source security clearance, signing
+approval, tag or release is asserted.

@@ -46,11 +46,17 @@ not security clearance. Source-bound reviewer evidence, contextual rule
 coverage and accountable dispositions remain release requirements; leaving
 environment-specific release pipelines behind does not waive them.
 
-Mike Storm retains first-built authorship. Material OpenAI Codex assistance
-(GPT-6) was used to prepare this import, document its limits and verify its
+Mike Storm retains first-built authorship. Material AI assistance disclosure:
+OpenAI Codex; exact deployed model/version not independently established.
+Assistance was used to prepare this import, document its limits and verify its
 scope and gates; the contributor and DCO signer is Mike Storm.
 KTP specification attribution remains NMCITRA's; see the
 [canonical KTP citation](https://github.com/nmcitra/ktp-rfc/blob/main/CITATION.cff).
+
+Disclosure correction, 2026-10-02: the GPT-6 label in source import commit
+`e13d5855adc9834ab62fc167ba348ffd18aca170` was unverified and is superseded
+by the disclosure above. The historical commit is preserved unchanged.
+This correction changes contribution metadata only.
 
 ## What stayed behind
 

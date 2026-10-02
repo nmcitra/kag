@@ -1,0 +1,968 @@
+{
+  "evidence_scope": "modeled",
+  "format_scope": "Local frozen decision consumer codec; not canonical KTP or provider wire format.",
+  "provenance": "Separately authored Python stdlib reference from frozen plan; no implementation source imported or inspected.",
+  "domain_hex": "4b41472d4d4f44454c45442d4445434953494f4e2f7631",
+  "domain_length": 23,
+  "domain_prefix_hex": "00000017",
+  "field_count": 33,
+  "cases": [
+    {
+      "name": "marker_allow_equal_capacity",
+      "payload_length": 739,
+      "payload_sha256": "5b2317436e3632a331354a785f955b9a2ac093894492f810d199c7c579c1c9f6",
+      "payload_hex": "000000174b41472d4d4f44454c45442d4445434953494f4e2f763100010000000b70726f64756365722d30310002000000146b61672d6d6f64656c2d656666656374732d763100030000000566696e616c000400000009726573756c742d3031000500000020111111111111111111111111111111111111111111111111111111111111111100060000002012121212121212121212121212121212121212121212121212121212121212120007000000201313131313131313131313131313131313131313131313131313131313131313000800000003612d31000900000003742d61000a0000000401692d31000b000000037a2d31000c0000000e6c61622d666978747572652d3031000d000000267265706c61793031323334353637383961626364656630313233343536373839616263646566000e0000002017aec977772b5a6fc471597faa5dff9fff6ce9d6250fd283c43a5143f142b3b3000f000000200101010101010101010101010101010101010101010101010101010101010101001000000020020202020202020202020202020202020202020202020202020202020202020200110000002003030303030303030303030303030303030303030303030303030303030303030012000000200404040404040404040404040404040404040404040404040404040404040404001300000020050505050505050505050505050505050505050505050505050505050505050500140000002006060606060606060606060606060606060606060606060606060606060606060015000000081a5e27eef13e00000016000000081a5e27f01b43f200001700000005616c6c6f770018000000010000190000000101001a000000080000000000000001001b000000080000000000000001001c000000084f70657261746f72001d00000006737461626c65001e0000000f666978747572652d65666665637473001f0000000765666665637473002000000008000000000000000100210000000103",
+      "parsed_fields": {
+        "ProducerID": "producer-01",
+        "ProfileID": "kag-model-effects-v1",
+        "ResultKind": "final",
+        "ResultID": "result-01",
+        "BindingDigest": "1111111111111111111111111111111111111111111111111111111111111111",
+        "OperationDigest": "1212121212121212121212121212121212121212121212121212121212121212",
+        "IdentityProjectionDigest": "1313131313131313131313131313131313131313131313131313131313131313",
+        "ActorID": "a-1",
+        "TenantID": "t-a",
+        "InstanceID": "i-1",
+        "ZoneID": "z-1",
+        "AudienceID": "lab-fixture-01",
+        "ReplayID": "replay0123456789abcdef0123456789abcdef",
+        "CatalogDigest": "17aec977772b5a6fc471597faa5dff9fff6ce9d6250fd283c43a5143f142b3b3",
+        "PolicyDigest": "0101010101010101010101010101010101010101010101010101010101010101",
+        "GatewayBuildDigest": "0202020202020202020202020202020202020202020202020202020202020202",
+        "ProtectedConfigDigest": "0303030303030303030303030303030303030303030303030303030303030303",
+        "TargetBuildDigest": "0404040404040404040404040404040404040404040404040404040404040404",
+        "TargetContractDigest": "0505050505050505050505050505050505050505050505050505050505050505",
+        "DecisionProfileDigest": "0606060606060606060606060606060606060606060606060606060606060606",
+        "IssuedAtUnixNS": 1900000000000000000,
+        "ExpiresUnixNS": 1900000005000000000,
+        "Outcome": "allow",
+        "SoulVeto": false,
+        "CapacityKnown": true,
+        "AutonomyDemand": 1,
+        "EffectiveCapacity": 1,
+        "Tier": "Operator",
+        "Supervision": "stable",
+        "Magnitude": "fixture-effects",
+        "Unit": "effects",
+        "ConstraintCeiling": 1,
+        "AllowedMarkers": 3
+      },
+      "semantic_note": "Syntax valid; allow/stable/operator/demand=capacity=ceiling=1/mask=3. Actual acceptance still requires every registered binding, identity, permission, inspection and clock gate.",
+      "tlv_witness": [
+        {
+          "tag": 1,
+          "name": "ProducerID",
+          "offset": 27,
+          "length": 11,
+          "header_hex": "00010000000b",
+          "value_hex": "70726f64756365722d3031"
+        },
+        {
+          "tag": 2,
+          "name": "ProfileID",
+          "offset": 44,
+          "length": 20,
+          "header_hex": "000200000014",
+          "value_hex": "6b61672d6d6f64656c2d656666656374732d7631"
+        },
+        {
+          "tag": 3,
+          "name": "ResultKind",
+          "offset": 70,
+          "length": 5,
+          "header_hex": "000300000005",
+          "value_hex": "66696e616c"
+        },
+        {
+          "tag": 4,
+          "name": "ResultID",
+          "offset": 81,
+          "length": 9,
+          "header_hex": "000400000009",
+          "value_hex": "726573756c742d3031"
+        },
+        {
+          "tag": 5,
+          "name": "BindingDigest",
+          "offset": 96,
+          "length": 32,
+          "header_hex": "000500000020",
+          "value_hex": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        {
+          "tag": 6,
+          "name": "OperationDigest",
+          "offset": 134,
+          "length": 32,
+          "header_hex": "000600000020",
+          "value_hex": "1212121212121212121212121212121212121212121212121212121212121212"
+        },
+        {
+          "tag": 7,
+          "name": "IdentityProjectionDigest",
+          "offset": 172,
+          "length": 32,
+          "header_hex": "000700000020",
+          "value_hex": "1313131313131313131313131313131313131313131313131313131313131313"
+        },
+        {
+          "tag": 8,
+          "name": "ActorID",
+          "offset": 210,
+          "length": 3,
+          "header_hex": "000800000003",
+          "value_hex": "612d31"
+        },
+        {
+          "tag": 9,
+          "name": "TenantID",
+          "offset": 219,
+          "length": 3,
+          "header_hex": "000900000003",
+          "value_hex": "742d61"
+        },
+        {
+          "tag": 10,
+          "name": "InstanceID",
+          "offset": 228,
+          "length": 4,
+          "header_hex": "000a00000004",
+          "value_hex": "01692d31"
+        },
+        {
+          "tag": 11,
+          "name": "ZoneID",
+          "offset": 238,
+          "length": 3,
+          "header_hex": "000b00000003",
+          "value_hex": "7a2d31"
+        },
+        {
+          "tag": 12,
+          "name": "AudienceID",
+          "offset": 247,
+          "length": 14,
+          "header_hex": "000c0000000e",
+          "value_hex": "6c61622d666978747572652d3031"
+        },
+        {
+          "tag": 13,
+          "name": "ReplayID",
+          "offset": 267,
+          "length": 38,
+          "header_hex": "000d00000026",
+          "value_hex": "7265706c61793031323334353637383961626364656630313233343536373839616263646566"
+        },
+        {
+          "tag": 14,
+          "name": "CatalogDigest",
+          "offset": 311,
+          "length": 32,
+          "header_hex": "000e00000020",
+          "value_hex": "17aec977772b5a6fc471597faa5dff9fff6ce9d6250fd283c43a5143f142b3b3"
+        },
+        {
+          "tag": 15,
+          "name": "PolicyDigest",
+          "offset": 349,
+          "length": 32,
+          "header_hex": "000f00000020",
+          "value_hex": "0101010101010101010101010101010101010101010101010101010101010101"
+        },
+        {
+          "tag": 16,
+          "name": "GatewayBuildDigest",
+          "offset": 387,
+          "length": 32,
+          "header_hex": "001000000020",
+          "value_hex": "0202020202020202020202020202020202020202020202020202020202020202"
+        },
+        {
+          "tag": 17,
+          "name": "ProtectedConfigDigest",
+          "offset": 425,
+          "length": 32,
+          "header_hex": "001100000020",
+          "value_hex": "0303030303030303030303030303030303030303030303030303030303030303"
+        },
+        {
+          "tag": 18,
+          "name": "TargetBuildDigest",
+          "offset": 463,
+          "length": 32,
+          "header_hex": "001200000020",
+          "value_hex": "0404040404040404040404040404040404040404040404040404040404040404"
+        },
+        {
+          "tag": 19,
+          "name": "TargetContractDigest",
+          "offset": 501,
+          "length": 32,
+          "header_hex": "001300000020",
+          "value_hex": "0505050505050505050505050505050505050505050505050505050505050505"
+        },
+        {
+          "tag": 20,
+          "name": "DecisionProfileDigest",
+          "offset": 539,
+          "length": 32,
+          "header_hex": "001400000020",
+          "value_hex": "0606060606060606060606060606060606060606060606060606060606060606"
+        },
+        {
+          "tag": 21,
+          "name": "IssuedAtUnixNS",
+          "offset": 577,
+          "length": 8,
+          "header_hex": "001500000008",
+          "value_hex": "1a5e27eef13e0000"
+        },
+        {
+          "tag": 22,
+          "name": "ExpiresUnixNS",
+          "offset": 591,
+          "length": 8,
+          "header_hex": "001600000008",
+          "value_hex": "1a5e27f01b43f200"
+        },
+        {
+          "tag": 23,
+          "name": "Outcome",
+          "offset": 605,
+          "length": 5,
+          "header_hex": "001700000005",
+          "value_hex": "616c6c6f77"
+        },
+        {
+          "tag": 24,
+          "name": "SoulVeto",
+          "offset": 616,
+          "length": 1,
+          "header_hex": "001800000001",
+          "value_hex": "00"
+        },
+        {
+          "tag": 25,
+          "name": "CapacityKnown",
+          "offset": 623,
+          "length": 1,
+          "header_hex": "001900000001",
+          "value_hex": "01"
+        },
+        {
+          "tag": 26,
+          "name": "AutonomyDemand",
+          "offset": 630,
+          "length": 8,
+          "header_hex": "001a00000008",
+          "value_hex": "0000000000000001"
+        },
+        {
+          "tag": 27,
+          "name": "EffectiveCapacity",
+          "offset": 644,
+          "length": 8,
+          "header_hex": "001b00000008",
+          "value_hex": "0000000000000001"
+        },
+        {
+          "tag": 28,
+          "name": "Tier",
+          "offset": 658,
+          "length": 8,
+          "header_hex": "001c00000008",
+          "value_hex": "4f70657261746f72"
+        },
+        {
+          "tag": 29,
+          "name": "Supervision",
+          "offset": 672,
+          "length": 6,
+          "header_hex": "001d00000006",
+          "value_hex": "737461626c65"
+        },
+        {
+          "tag": 30,
+          "name": "Magnitude",
+          "offset": 684,
+          "length": 15,
+          "header_hex": "001e0000000f",
+          "value_hex": "666978747572652d65666665637473"
+        },
+        {
+          "tag": 31,
+          "name": "Unit",
+          "offset": 705,
+          "length": 7,
+          "header_hex": "001f00000007",
+          "value_hex": "65666665637473"
+        },
+        {
+          "tag": 32,
+          "name": "ConstraintCeiling",
+          "offset": 718,
+          "length": 8,
+          "header_hex": "002000000008",
+          "value_hex": "0000000000000001"
+        },
+        {
+          "tag": 33,
+          "name": "AllowedMarkers",
+          "offset": 732,
+          "length": 1,
+          "header_hex": "002100000001",
+          "value_hex": "03"
+        }
+      ],
+      "manual_decoder_negative_checks": {
+        "trailing_byte": "trailing bytes",
+        "truncated_last_value": "field bound/truncation",
+        "oversize_message": "message bound",
+        "wrong_domain": "domain/version",
+        "missing_last_tag": "truncated or missing tag",
+        "duplicate_tag": "repeated/unknown/reordered/missing tag",
+        "unknown_tag": "repeated/unknown/reordered/missing tag",
+        "invalid_boolean": "boolean length/value",
+        "invalid_instance_presence": "instance presence/length"
+      }
+    },
+    {
+      "name": "marker_upstream_deny_and_soul_veto",
+      "payload_length": 738,
+      "payload_sha256": "66e1ef7065523712d00f3598bd65f0957343ef8b63fb9f3abbf8dca5cdeacbb5",
+      "payload_hex": "000000174b41472d4d4f44454c45442d4445434953494f4e2f763100010000000b70726f64756365722d30310002000000146b61672d6d6f64656c2d656666656374732d763100030000000566696e616c000400000009726573756c742d3031000500000020111111111111111111111111111111111111111111111111111111111111111100060000002012121212121212121212121212121212121212121212121212121212121212120007000000201313131313131313131313131313131313131313131313131313131313131313000800000003612d31000900000003742d61000a0000000401692d31000b000000037a2d31000c0000000e6c61622d666978747572652d3031000d000000267265706c61793031323334353637383961626364656630313233343536373839616263646566000e0000002017aec977772b5a6fc471597faa5dff9fff6ce9d6250fd283c43a5143f142b3b3000f000000200101010101010101010101010101010101010101010101010101010101010101001000000020020202020202020202020202020202020202020202020202020202020202020200110000002003030303030303030303030303030303030303030303030303030303030303030012000000200404040404040404040404040404040404040404040404040404040404040404001300000020050505050505050505050505050505050505050505050505050505050505050500140000002006060606060606060606060606060606060606060606060606060606060606060015000000081a5e27eef13e00000016000000081a5e27f01b43f20000170000000464656e790018000000010100190000000101001a000000080000000000000001001b000000080000000000000001001c000000084f70657261746f72001d00000006737461626c65001e0000000f666978747572652d65666665637473001f0000000765666665637473002000000008000000000000000100210000000103",
+      "parsed_fields": {
+        "ProducerID": "producer-01",
+        "ProfileID": "kag-model-effects-v1",
+        "ResultKind": "final",
+        "ResultID": "result-01",
+        "BindingDigest": "1111111111111111111111111111111111111111111111111111111111111111",
+        "OperationDigest": "1212121212121212121212121212121212121212121212121212121212121212",
+        "IdentityProjectionDigest": "1313131313131313131313131313131313131313131313131313131313131313",
+        "ActorID": "a-1",
+        "TenantID": "t-a",
+        "InstanceID": "i-1",
+        "ZoneID": "z-1",
+        "AudienceID": "lab-fixture-01",
+        "ReplayID": "replay0123456789abcdef0123456789abcdef",
+        "CatalogDigest": "17aec977772b5a6fc471597faa5dff9fff6ce9d6250fd283c43a5143f142b3b3",
+        "PolicyDigest": "0101010101010101010101010101010101010101010101010101010101010101",
+        "GatewayBuildDigest": "0202020202020202020202020202020202020202020202020202020202020202",
+        "ProtectedConfigDigest": "0303030303030303030303030303030303030303030303030303030303030303",
+        "TargetBuildDigest": "0404040404040404040404040404040404040404040404040404040404040404",
+        "TargetContractDigest": "0505050505050505050505050505050505050505050505050505050505050505",
+        "DecisionProfileDigest": "0606060606060606060606060606060606060606060606060606060606060606",
+        "IssuedAtUnixNS": 1900000000000000000,
+        "ExpiresUnixNS": 1900000005000000000,
+        "Outcome": "deny",
+        "SoulVeto": true,
+        "CapacityKnown": true,
+        "AutonomyDemand": 1,
+        "EffectiveCapacity": 1,
+        "Tier": "Operator",
+        "Supervision": "stable",
+        "Magnitude": "fixture-effects",
+        "Unit": "effects",
+        "ConstraintCeiling": 1,
+        "AllowedMarkers": 3
+      },
+      "semantic_note": "Syntax valid but semantic acceptance must fail: upstream denial and Soul veto each independently withhold.",
+      "tlv_witness": [
+        {
+          "tag": 1,
+          "name": "ProducerID",
+          "offset": 27,
+          "length": 11,
+          "header_hex": "00010000000b",
+          "value_hex": "70726f64756365722d3031"
+        },
+        {
+          "tag": 2,
+          "name": "ProfileID",
+          "offset": 44,
+          "length": 20,
+          "header_hex": "000200000014",
+          "value_hex": "6b61672d6d6f64656c2d656666656374732d7631"
+        },
+        {
+          "tag": 3,
+          "name": "ResultKind",
+          "offset": 70,
+          "length": 5,
+          "header_hex": "000300000005",
+          "value_hex": "66696e616c"
+        },
+        {
+          "tag": 4,
+          "name": "ResultID",
+          "offset": 81,
+          "length": 9,
+          "header_hex": "000400000009",
+          "value_hex": "726573756c742d3031"
+        },
+        {
+          "tag": 5,
+          "name": "BindingDigest",
+          "offset": 96,
+          "length": 32,
+          "header_hex": "000500000020",
+          "value_hex": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        {
+          "tag": 6,
+          "name": "OperationDigest",
+          "offset": 134,
+          "length": 32,
+          "header_hex": "000600000020",
+          "value_hex": "1212121212121212121212121212121212121212121212121212121212121212"
+        },
+        {
+          "tag": 7,
+          "name": "IdentityProjectionDigest",
+          "offset": 172,
+          "length": 32,
+          "header_hex": "000700000020",
+          "value_hex": "1313131313131313131313131313131313131313131313131313131313131313"
+        },
+        {
+          "tag": 8,
+          "name": "ActorID",
+          "offset": 210,
+          "length": 3,
+          "header_hex": "000800000003",
+          "value_hex": "612d31"
+        },
+        {
+          "tag": 9,
+          "name": "TenantID",
+          "offset": 219,
+          "length": 3,
+          "header_hex": "000900000003",
+          "value_hex": "742d61"
+        },
+        {
+          "tag": 10,
+          "name": "InstanceID",
+          "offset": 228,
+          "length": 4,
+          "header_hex": "000a00000004",
+          "value_hex": "01692d31"
+        },
+        {
+          "tag": 11,
+          "name": "ZoneID",
+          "offset": 238,
+          "length": 3,
+          "header_hex": "000b00000003",
+          "value_hex": "7a2d31"
+        },
+        {
+          "tag": 12,
+          "name": "AudienceID",
+          "offset": 247,
+          "length": 14,
+          "header_hex": "000c0000000e",
+          "value_hex": "6c61622d666978747572652d3031"
+        },
+        {
+          "tag": 13,
+          "name": "ReplayID",
+          "offset": 267,
+          "length": 38,
+          "header_hex": "000d00000026",
+          "value_hex": "7265706c61793031323334353637383961626364656630313233343536373839616263646566"
+        },
+        {
+          "tag": 14,
+          "name": "CatalogDigest",
+          "offset": 311,
+          "length": 32,
+          "header_hex": "000e00000020",
+          "value_hex": "17aec977772b5a6fc471597faa5dff9fff6ce9d6250fd283c43a5143f142b3b3"
+        },
+        {
+          "tag": 15,
+          "name": "PolicyDigest",
+          "offset": 349,
+          "length": 32,
+          "header_hex": "000f00000020",
+          "value_hex": "0101010101010101010101010101010101010101010101010101010101010101"
+        },
+        {
+          "tag": 16,
+          "name": "GatewayBuildDigest",
+          "offset": 387,
+          "length": 32,
+          "header_hex": "001000000020",
+          "value_hex": "0202020202020202020202020202020202020202020202020202020202020202"
+        },
+        {
+          "tag": 17,
+          "name": "ProtectedConfigDigest",
+          "offset": 425,
+          "length": 32,
+          "header_hex": "001100000020",
+          "value_hex": "0303030303030303030303030303030303030303030303030303030303030303"
+        },
+        {
+          "tag": 18,
+          "name": "TargetBuildDigest",
+          "offset": 463,
+          "length": 32,
+          "header_hex": "001200000020",
+          "value_hex": "0404040404040404040404040404040404040404040404040404040404040404"
+        },
+        {
+          "tag": 19,
+          "name": "TargetContractDigest",
+          "offset": 501,
+          "length": 32,
+          "header_hex": "001300000020",
+          "value_hex": "0505050505050505050505050505050505050505050505050505050505050505"
+        },
+        {
+          "tag": 20,
+          "name": "DecisionProfileDigest",
+          "offset": 539,
+          "length": 32,
+          "header_hex": "001400000020",
+          "value_hex": "0606060606060606060606060606060606060606060606060606060606060606"
+        },
+        {
+          "tag": 21,
+          "name": "IssuedAtUnixNS",
+          "offset": 577,
+          "length": 8,
+          "header_hex": "001500000008",
+          "value_hex": "1a5e27eef13e0000"
+        },
+        {
+          "tag": 22,
+          "name": "ExpiresUnixNS",
+          "offset": 591,
+          "length": 8,
+          "header_hex": "001600000008",
+          "value_hex": "1a5e27f01b43f200"
+        },
+        {
+          "tag": 23,
+          "name": "Outcome",
+          "offset": 605,
+          "length": 4,
+          "header_hex": "001700000004",
+          "value_hex": "64656e79"
+        },
+        {
+          "tag": 24,
+          "name": "SoulVeto",
+          "offset": 615,
+          "length": 1,
+          "header_hex": "001800000001",
+          "value_hex": "01"
+        },
+        {
+          "tag": 25,
+          "name": "CapacityKnown",
+          "offset": 622,
+          "length": 1,
+          "header_hex": "001900000001",
+          "value_hex": "01"
+        },
+        {
+          "tag": 26,
+          "name": "AutonomyDemand",
+          "offset": 629,
+          "length": 8,
+          "header_hex": "001a00000008",
+          "value_hex": "0000000000000001"
+        },
+        {
+          "tag": 27,
+          "name": "EffectiveCapacity",
+          "offset": 643,
+          "length": 8,
+          "header_hex": "001b00000008",
+          "value_hex": "0000000000000001"
+        },
+        {
+          "tag": 28,
+          "name": "Tier",
+          "offset": 657,
+          "length": 8,
+          "header_hex": "001c00000008",
+          "value_hex": "4f70657261746f72"
+        },
+        {
+          "tag": 29,
+          "name": "Supervision",
+          "offset": 671,
+          "length": 6,
+          "header_hex": "001d00000006",
+          "value_hex": "737461626c65"
+        },
+        {
+          "tag": 30,
+          "name": "Magnitude",
+          "offset": 683,
+          "length": 15,
+          "header_hex": "001e0000000f",
+          "value_hex": "666978747572652d65666665637473"
+        },
+        {
+          "tag": 31,
+          "name": "Unit",
+          "offset": 704,
+          "length": 7,
+          "header_hex": "001f00000007",
+          "value_hex": "65666665637473"
+        },
+        {
+          "tag": 32,
+          "name": "ConstraintCeiling",
+          "offset": 717,
+          "length": 8,
+          "header_hex": "002000000008",
+          "value_hex": "0000000000000001"
+        },
+        {
+          "tag": 33,
+          "name": "AllowedMarkers",
+          "offset": 731,
+          "length": 1,
+          "header_hex": "002100000001",
+          "value_hex": "03"
+        }
+      ],
+      "manual_decoder_negative_checks": {
+        "trailing_byte": "trailing bytes",
+        "truncated_last_value": "field bound/truncation",
+        "oversize_message": "message bound",
+        "wrong_domain": "domain/version",
+        "missing_last_tag": "truncated or missing tag",
+        "duplicate_tag": "repeated/unknown/reordered/missing tag",
+        "unknown_tag": "repeated/unknown/reordered/missing tag",
+        "invalid_boolean": "boolean length/value",
+        "invalid_instance_presence": "instance presence/length"
+      }
+    },
+    {
+      "name": "read_without_instance_zero_demand",
+      "payload_length": 736,
+      "payload_sha256": "b033c408a8da8331d6646d411b65c526a38e63ab5b311f4c004b0cbe9b8fb818",
+      "payload_hex": "000000174b41472d4d4f44454c45442d4445434953494f4e2f763100010000000b70726f64756365722d30310002000000146b61672d6d6f64656c2d656666656374732d763100030000000566696e616c000400000009726573756c742d3031000500000020111111111111111111111111111111111111111111111111111111111111111100060000002012121212121212121212121212121212121212121212121212121212121212120007000000201313131313131313131313131313131313131313131313131313131313131313000800000003612d31000900000003742d61000a0000000100000b000000037a2d31000c0000000e6c61622d666978747572652d3031000d000000267265706c61793031323334353637383961626364656630313233343536373839616263646566000e0000002017aec977772b5a6fc471597faa5dff9fff6ce9d6250fd283c43a5143f142b3b3000f000000200101010101010101010101010101010101010101010101010101010101010101001000000020020202020202020202020202020202020202020202020202020202020202020200110000002003030303030303030303030303030303030303030303030303030303030303030012000000200404040404040404040404040404040404040404040404040404040404040404001300000020050505050505050505050505050505050505050505050505050505050505050500140000002006060606060606060606060606060606060606060606060606060606060606060015000000081a5e27eef13e00000016000000081a5e27f01b43f200001700000005616c6c6f770018000000010000190000000101001a000000080000000000000000001b000000080000000000000001001c000000084f62736572766572001d00000006737461626c65001e0000000f666978747572652d65666665637473001f0000000765666665637473002000000008000000000000000100210000000100",
+      "parsed_fields": {
+        "ProducerID": "producer-01",
+        "ProfileID": "kag-model-effects-v1",
+        "ResultKind": "final",
+        "ResultID": "result-01",
+        "BindingDigest": "1111111111111111111111111111111111111111111111111111111111111111",
+        "OperationDigest": "1212121212121212121212121212121212121212121212121212121212121212",
+        "IdentityProjectionDigest": "1313131313131313131313131313131313131313131313131313131313131313",
+        "ActorID": "a-1",
+        "TenantID": "t-a",
+        "InstanceID": null,
+        "ZoneID": "z-1",
+        "AudienceID": "lab-fixture-01",
+        "ReplayID": "replay0123456789abcdef0123456789abcdef",
+        "CatalogDigest": "17aec977772b5a6fc471597faa5dff9fff6ce9d6250fd283c43a5143f142b3b3",
+        "PolicyDigest": "0101010101010101010101010101010101010101010101010101010101010101",
+        "GatewayBuildDigest": "0202020202020202020202020202020202020202020202020202020202020202",
+        "ProtectedConfigDigest": "0303030303030303030303030303030303030303030303030303030303030303",
+        "TargetBuildDigest": "0404040404040404040404040404040404040404040404040404040404040404",
+        "TargetContractDigest": "0505050505050505050505050505050505050505050505050505050505050505",
+        "DecisionProfileDigest": "0606060606060606060606060606060606060606060606060606060606060606",
+        "IssuedAtUnixNS": 1900000000000000000,
+        "ExpiresUnixNS": 1900000005000000000,
+        "Outcome": "allow",
+        "SoulVeto": false,
+        "CapacityKnown": true,
+        "AutonomyDemand": 0,
+        "EffectiveCapacity": 1,
+        "Tier": "Observer",
+        "Supervision": "stable",
+        "Magnitude": "fixture-effects",
+        "Unit": "effects",
+        "ConstraintCeiling": 1,
+        "AllowedMarkers": 0
+      },
+      "semantic_note": "Syntax valid; absent instance explicitly encoded as byte 0, read demand 0 and marker mask 0. Actual acceptance still requires the applicable registered gates.",
+      "tlv_witness": [
+        {
+          "tag": 1,
+          "name": "ProducerID",
+          "offset": 27,
+          "length": 11,
+          "header_hex": "00010000000b",
+          "value_hex": "70726f64756365722d3031"
+        },
+        {
+          "tag": 2,
+          "name": "ProfileID",
+          "offset": 44,
+          "length": 20,
+          "header_hex": "000200000014",
+          "value_hex": "6b61672d6d6f64656c2d656666656374732d7631"
+        },
+        {
+          "tag": 3,
+          "name": "ResultKind",
+          "offset": 70,
+          "length": 5,
+          "header_hex": "000300000005",
+          "value_hex": "66696e616c"
+        },
+        {
+          "tag": 4,
+          "name": "ResultID",
+          "offset": 81,
+          "length": 9,
+          "header_hex": "000400000009",
+          "value_hex": "726573756c742d3031"
+        },
+        {
+          "tag": 5,
+          "name": "BindingDigest",
+          "offset": 96,
+          "length": 32,
+          "header_hex": "000500000020",
+          "value_hex": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        {
+          "tag": 6,
+          "name": "OperationDigest",
+          "offset": 134,
+          "length": 32,
+          "header_hex": "000600000020",
+          "value_hex": "1212121212121212121212121212121212121212121212121212121212121212"
+        },
+        {
+          "tag": 7,
+          "name": "IdentityProjectionDigest",
+          "offset": 172,
+          "length": 32,
+          "header_hex": "000700000020",
+          "value_hex": "1313131313131313131313131313131313131313131313131313131313131313"
+        },
+        {
+          "tag": 8,
+          "name": "ActorID",
+          "offset": 210,
+          "length": 3,
+          "header_hex": "000800000003",
+          "value_hex": "612d31"
+        },
+        {
+          "tag": 9,
+          "name": "TenantID",
+          "offset": 219,
+          "length": 3,
+          "header_hex": "000900000003",
+          "value_hex": "742d61"
+        },
+        {
+          "tag": 10,
+          "name": "InstanceID",
+          "offset": 228,
+          "length": 1,
+          "header_hex": "000a00000001",
+          "value_hex": "00"
+        },
+        {
+          "tag": 11,
+          "name": "ZoneID",
+          "offset": 235,
+          "length": 3,
+          "header_hex": "000b00000003",
+          "value_hex": "7a2d31"
+        },
+        {
+          "tag": 12,
+          "name": "AudienceID",
+          "offset": 244,
+          "length": 14,
+          "header_hex": "000c0000000e",
+          "value_hex": "6c61622d666978747572652d3031"
+        },
+        {
+          "tag": 13,
+          "name": "ReplayID",
+          "offset": 264,
+          "length": 38,
+          "header_hex": "000d00000026",
+          "value_hex": "7265706c61793031323334353637383961626364656630313233343536373839616263646566"
+        },
+        {
+          "tag": 14,
+          "name": "CatalogDigest",
+          "offset": 308,
+          "length": 32,
+          "header_hex": "000e00000020",
+          "value_hex": "17aec977772b5a6fc471597faa5dff9fff6ce9d6250fd283c43a5143f142b3b3"
+        },
+        {
+          "tag": 15,
+          "name": "PolicyDigest",
+          "offset": 346,
+          "length": 32,
+          "header_hex": "000f00000020",
+          "value_hex": "0101010101010101010101010101010101010101010101010101010101010101"
+        },
+        {
+          "tag": 16,
+          "name": "GatewayBuildDigest",
+          "offset": 384,
+          "length": 32,
+          "header_hex": "001000000020",
+          "value_hex": "0202020202020202020202020202020202020202020202020202020202020202"
+        },
+        {
+          "tag": 17,
+          "name": "ProtectedConfigDigest",
+          "offset": 422,
+          "length": 32,
+          "header_hex": "001100000020",
+          "value_hex": "0303030303030303030303030303030303030303030303030303030303030303"
+        },
+        {
+          "tag": 18,
+          "name": "TargetBuildDigest",
+          "offset": 460,
+          "length": 32,
+          "header_hex": "001200000020",
+          "value_hex": "0404040404040404040404040404040404040404040404040404040404040404"
+        },
+        {
+          "tag": 19,
+          "name": "TargetContractDigest",
+          "offset": 498,
+          "length": 32,
+          "header_hex": "001300000020",
+          "value_hex": "0505050505050505050505050505050505050505050505050505050505050505"
+        },
+        {
+          "tag": 20,
+          "name": "DecisionProfileDigest",
+          "offset": 536,
+          "length": 32,
+          "header_hex": "001400000020",
+          "value_hex": "0606060606060606060606060606060606060606060606060606060606060606"
+        },
+        {
+          "tag": 21,
+          "name": "IssuedAtUnixNS",
+          "offset": 574,
+          "length": 8,
+          "header_hex": "001500000008",
+          "value_hex": "1a5e27eef13e0000"
+        },
+        {
+          "tag": 22,
+          "name": "ExpiresUnixNS",
+          "offset": 588,
+          "length": 8,
+          "header_hex": "001600000008",
+          "value_hex": "1a5e27f01b43f200"
+        },
+        {
+          "tag": 23,
+          "name": "Outcome",
+          "offset": 602,
+          "length": 5,
+          "header_hex": "001700000005",
+          "value_hex": "616c6c6f77"
+        },
+        {
+          "tag": 24,
+          "name": "SoulVeto",
+          "offset": 613,
+          "length": 1,
+          "header_hex": "001800000001",
+          "value_hex": "00"
+        },
+        {
+          "tag": 25,
+          "name": "CapacityKnown",
+          "offset": 620,
+          "length": 1,
+          "header_hex": "001900000001",
+          "value_hex": "01"
+        },
+        {
+          "tag": 26,
+          "name": "AutonomyDemand",
+          "offset": 627,
+          "length": 8,
+          "header_hex": "001a00000008",
+          "value_hex": "0000000000000000"
+        },
+        {
+          "tag": 27,
+          "name": "EffectiveCapacity",
+          "offset": 641,
+          "length": 8,
+          "header_hex": "001b00000008",
+          "value_hex": "0000000000000001"
+        },
+        {
+          "tag": 28,
+          "name": "Tier",
+          "offset": 655,
+          "length": 8,
+          "header_hex": "001c00000008",
+          "value_hex": "4f62736572766572"
+        },
+        {
+          "tag": 29,
+          "name": "Supervision",
+          "offset": 669,
+          "length": 6,
+          "header_hex": "001d00000006",
+          "value_hex": "737461626c65"
+        },
+        {
+          "tag": 30,
+          "name": "Magnitude",
+          "offset": 681,
+          "length": 15,
+          "header_hex": "001e0000000f",
+          "value_hex": "666978747572652d65666665637473"
+        },
+        {
+          "tag": 31,
+          "name": "Unit",
+          "offset": 702,
+          "length": 7,
+          "header_hex": "001f00000007",
+          "value_hex": "65666665637473"
+        },
+        {
+          "tag": 32,
+          "name": "ConstraintCeiling",
+          "offset": 715,
+          "length": 8,
+          "header_hex": "002000000008",
+          "value_hex": "0000000000000001"
+        },
+        {
+          "tag": 33,
+          "name": "AllowedMarkers",
+          "offset": 729,
+          "length": 1,
+          "header_hex": "002100000001",
+          "value_hex": "00"
+        }
+      ],
+      "manual_decoder_negative_checks": {
+        "trailing_byte": "trailing bytes",
+        "truncated_last_value": "field bound/truncation",
+        "oversize_message": "message bound",
+        "wrong_domain": "domain/version",
+        "missing_last_tag": "truncated or missing tag",
+        "duplicate_tag": "repeated/unknown/reordered/missing tag",
+        "unknown_tag": "repeated/unknown/reordered/missing tag",
+        "invalid_boolean": "boolean length/value",
+        "invalid_instance_presence": "instance presence/length"
+      }
+    }
+  ]
+}

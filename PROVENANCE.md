@@ -77,8 +77,9 @@ person's.
 
 ## Separate draft runner contribution — 2026-10-02
 
-Mike Storm directed and is accountable for this contribution. Material
-OpenAI Codex assistance (GPT-6) was used to integrate the prepared runner,
+Mike Storm directed and is accountable for this contribution. Material AI
+assistance disclosure: OpenAI Codex; exact deployed model/version not
+independently established. Assistance was used to integrate the prepared runner,
 document its limits and verify scope, host gates and the local report.
 The contributor and DCO signer is Mike Storm.
 
@@ -115,3 +116,9 @@ Expected local results are 20 cases, 40 attempts, 12 modeled matches and
 8 unsupported cases, with qualification false and CLI exit 1. No production
 conformance, independent validation, source security clearance, signing
 approval, tag or release is asserted.
+
+Runner disclosure correction, 2026-10-02: the GPT-6 label in runner commit
+`144c8a4155219f5d05ea9134804dce0fc5032c42` was unverified and is superseded
+by the disclosure above. The historical commit is preserved unchanged.
+The source disclosure correction was cherry-picked as a new commit onto
+this branch. These corrections change contribution metadata only.

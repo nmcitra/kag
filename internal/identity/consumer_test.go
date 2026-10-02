@@ -2,8 +2,8 @@ package identity_test
 
 import (
 	"encoding/json"
-	"github.com/gatekeeper454/KTP-Component-Dev/internal/authn"
-	"github.com/gatekeeper454/KTP-Component-Dev/internal/identity"
+	"github.com/nmcitra/kag/internal/authn"
+	"github.com/nmcitra/kag/internal/identity"
 	"testing"
 	"time"
 )

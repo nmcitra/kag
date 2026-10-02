@@ -1,7 +1,7 @@
 package decision
 
 import (
-	"github.com/gatekeeper454/KTP-Component-Dev/internal/action"
+	"github.com/nmcitra/kag/internal/action"
 	"strconv"
 	"testing"
 )

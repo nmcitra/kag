@@ -5,7 +5,7 @@ import (
 	"crypto/sha256"
 	"encoding/hex"
 	"encoding/json"
-	"github.com/gatekeeper454/KTP-Component-Dev/internal/authn"
+	"github.com/nmcitra/kag/internal/authn"
 	"os"
 	"strings"
 	"testing"

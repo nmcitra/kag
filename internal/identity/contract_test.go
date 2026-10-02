@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"context"
 	"crypto/sha256"
-	"github.com/gatekeeper454/KTP-Component-Dev/internal/action"
+	"github.com/nmcitra/kag/internal/action"
 	"testing"
 )
 

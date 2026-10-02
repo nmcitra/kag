@@ -1,3 +1,3 @@
-module github.com/gatekeeper454/KTP-Component-Dev
+module github.com/nmcitra/kag
 
 go 1.27.1

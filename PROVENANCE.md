@@ -74,3 +74,23 @@ disclosure rule: where AI assistance was material to a contribution, the
 contribution says so, in the commit body or the PR, naming the model and
 version where practical. Disclosure is per contribution; authorship is the
 person's.
+
+## Public Go module path, 2026-10-02
+
+The source-only import merged as `0b1d0ba0b5ce19a129b43850f9609dd40e4f3bdd`.
+At the host's request this separate follow-up changes the module declaration
+and 22 Go files' internal import references from the original origin path to
+`github.com/nmcitra/kag`, where this project is now hosted. No Go behavior,
+dependency, toolchain, fixture or runtime authority contract changes.
+
+The original 59 `SOURCE-IMPORT.json` source blobs remain the historical import
+record, not an assertion that these 23 transformed files are still byte-exact.
+Its separate transformation record identifies the current destination blobs.
+Every other original blob remains unchanged. There are still no third-party
+modules and therefore no `go.sum`. No KIL internals are copied or new KIL
+runtime dependency asserted; first-built authorship remains Mike Storm's.
+
+Mike Storm is the contributor. Material assistance: OpenAI Codex; exact
+deployed model/version not independently established. Passing format/vet/unit/
+race checks does not qualify a production deployment, adopted conformance or
+signed release. Separate draft runner PR #3 is not included in this change.

@@ -12,7 +12,8 @@ the code stays something other people can build on.
    contribute it. It names a person, never a tool.
 3. **Green checks before review.** CI runs the DCO check, the hygiene check,
    and the tests. Run `scripts/check-all.sh` locally first.
-4. **No product names.** KIL is vendor-neutral. Adapters for a specific
+4. **No product names.** KAG is vendor-neutral. Where the core needs a feed
+   or an identity, it declares an interface; adapters wired to a commercial
    product live in a separate repository.
 5. **Source only.** No generated readers, transcripts, plan folders, evidence
    bundles, credentials, or runtime state. The hygiene check refuses them.

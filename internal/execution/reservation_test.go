@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"context"
 	"encoding/json"
-	"github.com/gatekeeper454/KTP-Component-Dev/internal/action"
-	"github.com/gatekeeper454/KTP-Component-Dev/internal/decision"
+	"github.com/nmcitra/kag/internal/action"
+	"github.com/nmcitra/kag/internal/decision"
 	"testing"
 )
 

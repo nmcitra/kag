@@ -3,6 +3,106 @@
   "sourceCommit": "a79bc5023c02345fbd6bb9a64286c9a463e5cf7e",
   "preparedDate": "2026-10-02",
   "scope": "Core libraries, their tests and modeled fixtures; excludes product-specific providers, deployment, runtime state and generated artifacts",
+  "transformations": [
+    {
+      "date": "2026-10-02",
+      "reason": "Separate host-requested public module path migration; original source blobs retained",
+      "files": [
+        {
+          "path": "go.mod",
+          "destinationBlob": "59aa398735fcf858bc1d5db15c9f55d0bd4affca"
+        },
+        {
+          "path": "internal/decision/hardening_test.go",
+          "destinationBlob": "e89b7360d263e955618ebb91f50a08d2488ab9b0"
+        },
+        {
+          "path": "internal/decision/semantics.go",
+          "destinationBlob": "1e63e48324089e616b790714bdc75decba147009"
+        },
+        {
+          "path": "internal/decision/semantics_test.go",
+          "destinationBlob": "61d50e15e1ecbc29e69c2e1b2acc2acb0b83e13c"
+        },
+        {
+          "path": "internal/decision/testmodel_test.go",
+          "destinationBlob": "453543b1bb285ad2809af54dbd554d90f670325e"
+        },
+        {
+          "path": "internal/decision/validator.go",
+          "destinationBlob": "77b729da2c1524eb84a68886c4447d11229d618c"
+        },
+        {
+          "path": "internal/decision/validator_test.go",
+          "destinationBlob": "ea4c215499de25f42b3b3761155378fadd1bcf9e"
+        },
+        {
+          "path": "internal/execution/fault_test.go",
+          "destinationBlob": "63e2c666607a5e014f0ef68f755ced8a233cc633"
+        },
+        {
+          "path": "internal/execution/model_test.go",
+          "destinationBlob": "d6034ffbd23cafe2a84a2eda01a9ad8569e9605d"
+        },
+        {
+          "path": "internal/execution/permitmodel_test.go",
+          "destinationBlob": "65ca019d506457e41739925238ca82df2b90e5a6"
+        },
+        {
+          "path": "internal/execution/reservation_test.go",
+          "destinationBlob": "171571f24d26463862c071457bc6cd57fdd3893b"
+        },
+        {
+          "path": "internal/execution/state.go",
+          "destinationBlob": "9b8ef4d831168a82e4354b58e9a410866db56052"
+        },
+        {
+          "path": "internal/execution/state_test.go",
+          "destinationBlob": "4caded843e32e7f76a1ce3c9ad13f9d9ed25521a"
+        },
+        {
+          "path": "internal/identity/codec.go",
+          "destinationBlob": "b229cf0477d428fc36aa1da7e10922f78aa5acf5"
+        },
+        {
+          "path": "internal/identity/consumer_test.go",
+          "destinationBlob": "c5554f7256921d5afe5f8518a059e85f9ffc8932"
+        },
+        {
+          "path": "internal/identity/contract.go",
+          "destinationBlob": "3c041889d46602908bef39e463b2ebb297990575"
+        },
+        {
+          "path": "internal/identity/contract_test.go",
+          "destinationBlob": "28777614d37701cd4a8f0cf207d08e87a40963d9"
+        },
+        {
+          "path": "internal/identity/golden_test.go",
+          "destinationBlob": "9982f38ebf97c1d2e848d006eabb1563a9c4a736"
+        },
+        {
+          "path": "internal/identity/measure.go",
+          "destinationBlob": "2a9e0457b5f7298a8042b3d8ba7b91faf6ef313e"
+        },
+        {
+          "path": "internal/identity/resolver.go",
+          "destinationBlob": "15982a59d6eb2342a37c753a5203e387796bdceb"
+        },
+        {
+          "path": "internal/identity/testmodel_test.go",
+          "destinationBlob": "323690c282662e476a963c21e1da22eff600af35"
+        },
+        {
+          "path": "internal/identity/validation.go",
+          "destinationBlob": "38c410c66577709459a525452e1c3f0215d0fcfe"
+        },
+        {
+          "path": "internal/observation/snapshot_test.go",
+          "destinationBlob": "0c9d194c497f1c3e7ef90b4c1173ab03988c9aed"
+        }
+      ]
+    }
+  ],
   "files": [
     {
       "path": "go.mod",
@@ -241,5 +341,6 @@
       "blob": "802b3808d225066385424ef96ec54a3a6ff6053d"
     }
   ],
-  "limitations": "Pre-conformance source import; original module path retained to preserve blob identities. No tagged KIL runtime dependency. Release requires source-bound CodeGuard review and draft/adopted vector receipts."
+  "limitations": "Pre-conformance source import; original module path retained to preserve blob identities. No tagged KIL runtime dependency. Release requires source-bound CodeGuard review and draft/adopted vector receipts.",
+  "currentState": "The limitations field describes the original import baseline. The separate public module-path follow-up now declares github.com/nmcitra/kag; transformations above record its 23 destination blobs. No new dependency or conformance claim."
 }

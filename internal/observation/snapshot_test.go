@@ -8,7 +8,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/gatekeeper454/KTP-Component-Dev/internal/observation"
+	"github.com/nmcitra/kag/internal/observation"
 )
 
 func validRef() observation.Ref {

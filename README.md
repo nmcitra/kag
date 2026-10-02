@@ -29,6 +29,11 @@ and `go.mod`: 59 original blobs recorded in [`SOURCE-IMPORT.json`](SOURCE-IMPORT
 The original module and import paths are retained for exact provenance. The
 module has no third-party dependencies and no KIL runtime dependency.
 
+That paragraph records the byte-exact import baseline. The separate public
+module-path follow-up now uses `github.com/nmcitra/kag`; `PROVENANCE.md` and
+the manifest's transformation record distinguish the 23 updated files from
+their original import identities. No behavior or dependency was added.
+
 The KTP comparison baseline is `v2.1.0`; the draft execution/evidence reference
 is KTP PR #139 at `e4bcc3f9e337309fdd521939998a7c941ffda245`.
 These are reference points, not adopted-profile conformance claims. The
@@ -50,8 +55,8 @@ Apache-2.0. See `LICENSE` and `NOTICE`.
 
 ## Local draft conformance reports
 
-The separate runner contribution is stacked on the source-only import until
-that import merges. It adds package-local tests and a local CLI; the
+The separate runner contribution now integrates the merged source-only import
+and public module-path follow-up. It adds package-local tests and a local CLI; the
 EXPERIMENTAL status and release gates above still apply.
 
 The adapter exercises the imported reducer and modeled ledger, recorder and

@@ -122,3 +122,36 @@ Runner disclosure correction, 2026-10-02: the GPT-6 label in runner commit
 by the disclosure above. The historical commit is preserved unchanged.
 The source disclosure correction was cherry-picked as a new commit onto
 this branch. These corrections change contribution metadata only.
+## Public Go module path, 2026-10-02
+
+The source-only import merged as `0b1d0ba0b5ce19a129b43850f9609dd40e4f3bdd`.
+At the host's request this separate follow-up changes the module declaration
+and 22 Go files' internal import references from the original origin path to
+`github.com/nmcitra/kag`, where this project is now hosted. No Go behavior,
+dependency, toolchain, fixture or runtime authority contract changes.
+
+The original 59 `SOURCE-IMPORT.json` source blobs remain the historical import
+record, not an assertion that these 23 transformed files are still byte-exact.
+Its separate transformation record identifies the current destination blobs.
+Every other original blob remains unchanged. There are still no third-party
+modules and therefore no `go.sum`. No KIL internals are copied or new KIL
+runtime dependency asserted; first-built authorship remains Mike Storm's.
+
+Mike Storm is the contributor. Material assistance: OpenAI Codex; exact
+deployed model/version not independently established. Passing format/vet/unit/
+race checks does not qualify a production deployment, adopted conformance or
+signed release. Separate draft runner PR #3 is not included in this change.
+
+## Draft runner integration, 2026-10-02
+
+The runner branch incorporates public main
+`444ab871be32c302ed23b503d6022e532724ea31` through a normal merge. Earlier
+unchanged-source and stacked-import statements describe the original runner
+baseline. The current core retains the public module migration above: 23
+transformed destination blobs, 36 unchanged originals, and all 59 historical
+manifest identities. All eight reviewed runner files remain byte-identical:
+they contain no old module imports, and the merged focused conformance tests
+passed without runner string replacements. Fixture/specification pins and
+runtime behavior are unchanged. Mike Storm is
+accountable for this integration. Material assistance: OpenAI Codex; exact
+deployed model/version not independently established.

@@ -4,8 +4,8 @@ package identity
 import (
 	"context"
 	"crypto/sha256"
-	"github.com/gatekeeper454/KTP-Component-Dev/internal/action"
-	"github.com/gatekeeper454/KTP-Component-Dev/internal/authn"
+	"github.com/nmcitra/kag/internal/action"
+	"github.com/nmcitra/kag/internal/authn"
 	"time"
 )
 

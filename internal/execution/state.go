@@ -4,8 +4,8 @@ package execution
 
 import (
 	"bytes"
-	"github.com/gatekeeper454/KTP-Component-Dev/internal/action"
-	"github.com/gatekeeper454/KTP-Component-Dev/internal/decision"
+	"github.com/nmcitra/kag/internal/action"
+	"github.com/nmcitra/kag/internal/decision"
 	"math"
 	"reflect"
 )

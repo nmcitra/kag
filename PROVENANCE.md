@@ -75,6 +75,53 @@ contribution says so, in the commit body or the PR, naming the model and
 version where practical. Disclosure is per contribution; authorship is the
 person's.
 
+## Separate draft runner contribution — 2026-10-02
+
+Mike Storm directed and is accountable for this contribution. Material AI
+assistance disclosure: OpenAI Codex; exact deployed model/version not
+independently established. Assistance was used to integrate the prepared runner,
+document its limits and verify scope, host gates and the local report.
+The contributor and DCO signer is Mike Storm.
+
+Eight new files are copied exactly from prepared candidate
+`8411f358283071df75fc1dd12ce59dd4072dcee6`: fixture loader and preflight,
+package-local adapter, report and runner tests, fixture and its upstream
+NOTICE, and `scripts/run-conformance.sh`. No private preparation ancestry is
+imported. All 59 original source blobs and `SOURCE-IMPORT.json` stay unchanged.
+README and this provenance record are additive; host status, root NOTICE,
+governance, CI and host check scripts are preserved. This draft contribution
+is stacked on the source import until that PR merges.
+
+The fixture comes from canonical KTP commit
+`7855966e8c061dae165d4d66ee2527bacbb59d6c`, path
+`specifications/conformance/consequential-action-execution-v1.json`, with
+SHA-256 `732e293673461807d9ae491ac3d00b1c42dbb4143c5b3bf6056ab3d44993f25d`.
+The execution/evidence specification SHA-256 is
+`51f11db0305585efba81cd99054bd6bd0ae1b87d84cc0a7c8a844879a7e64c5d`.
+The fixture is distributed under Apache-2.0; exact upstream
+[NOTICE](internal/execution/testdata/NOTICE) is retained alongside it,
+SHA-256 `92294ef1c8e9f6a137f3036f6d8d61aa28d363ef4ed89ac311b3fb1d6611974c`.
+KTP specification attribution remains NMCITRA's and Chris Perkins's;
+[canonical citation](https://github.com/nmcitra/ktp-rfc/blob/main/CITATION.cff).
+
+The request-only adapter receives no vector IDs, labels or expected answers.
+Observed values come from imported reducer operations and modeled ledger,
+recorder and target state; the initial-send oracle remains test-only. Reports
+retain detached result snapshots and fixed error categories rather than
+arbitrary panic payloads. Required validated-permit, production time,
+persistence, live authority, authenticated non-dispatch coverage, renewed
+decision correlation and continuing safe-transition gaps remain blockers.
+Eleven schema vectors and the mutation-validation vector are not executed.
+Expected local results are 20 cases, 40 attempts, 12 modeled matches and
+8 unsupported cases, with qualification false and CLI exit 1. No production
+conformance, independent validation, source security clearance, signing
+approval, tag or release is asserted.
+
+Runner disclosure correction, 2026-10-02: the GPT-6 label in runner commit
+`144c8a4155219f5d05ea9134804dce0fc5032c42` was unverified and is superseded
+by the disclosure above. The historical commit is preserved unchanged.
+The source disclosure correction was cherry-picked as a new commit onto
+this branch. These corrections change contribution metadata only.
 ## Public Go module path, 2026-10-02
 
 The source-only import merged as `0b1d0ba0b5ce19a129b43850f9609dd40e4f3bdd`.
@@ -94,3 +141,17 @@ Mike Storm is the contributor. Material assistance: OpenAI Codex; exact
 deployed model/version not independently established. Passing format/vet/unit/
 race checks does not qualify a production deployment, adopted conformance or
 signed release. Separate draft runner PR #3 is not included in this change.
+
+## Draft runner integration, 2026-10-02
+
+The runner branch incorporates public main
+`444ab871be32c302ed23b503d6022e532724ea31` through a normal merge. Earlier
+unchanged-source and stacked-import statements describe the original runner
+baseline. The current core retains the public module migration above: 23
+transformed destination blobs, 36 unchanged originals, and all 59 historical
+manifest identities. All eight reviewed runner files remain byte-identical:
+they contain no old module imports, and the merged focused conformance tests
+passed without runner string replacements. Fixture/specification pins and
+runtime behavior are unchanged. Mike Storm is
+accountable for this integration. Material assistance: OpenAI Codex; exact
+deployed model/version not independently established.

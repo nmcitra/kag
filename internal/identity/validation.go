@@ -3,8 +3,8 @@ package identity
 import (
 	"crypto/sha256"
 	"encoding/json"
-	"github.com/gatekeeper454/KTP-Component-Dev/internal/action"
-	"github.com/gatekeeper454/KTP-Component-Dev/internal/authn"
+	"github.com/nmcitra/kag/internal/action"
+	"github.com/nmcitra/kag/internal/authn"
 	"math"
 	"unicode/utf8"
 )

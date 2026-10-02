@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"crypto/sha256"
 	"fmt"
-	"github.com/gatekeeper454/KTP-Component-Dev/internal/action"
+	"github.com/nmcitra/kag/internal/action"
 	"math"
 	"reflect"
 	"strconv"

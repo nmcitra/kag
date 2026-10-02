@@ -2,7 +2,7 @@ package decision
 
 import (
 	"bytes"
-	"github.com/gatekeeper454/KTP-Component-Dev/internal/action"
+	"github.com/nmcitra/kag/internal/action"
 )
 
 func markerMask(o action.Operation) (uint8, error) {

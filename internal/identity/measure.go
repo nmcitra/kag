@@ -1,6 +1,6 @@
 package identity
 
-import "github.com/gatekeeper454/KTP-Component-Dev/internal/authn"
+import "github.com/nmcitra/kag/internal/authn"
 
 // wireMeasure checks the entire exact encoded footprint before any retention.
 type wireMeasure struct {

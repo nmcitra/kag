@@ -2,7 +2,7 @@ package identity
 
 import (
 	"encoding/binary"
-	"github.com/gatekeeper454/KTP-Component-Dev/internal/authn"
+	"github.com/nmcitra/kag/internal/authn"
 	"sort"
 	"unicode/utf8"
 )

@@ -12,8 +12,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gatekeeper454/KTP-Component-Dev/internal/action"
-	"github.com/gatekeeper454/KTP-Component-Dev/internal/identity"
+	"github.com/nmcitra/kag/internal/action"
+	"github.com/nmcitra/kag/internal/identity"
 )
 
 // These regressions exercise modeled decision contracts only; no operation is dispatched.

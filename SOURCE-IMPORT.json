@@ -1,0 +1,245 @@
+{
+  "sourceRepository": "https://github.com/gatekeeper454/KTP-Component-Dev",
+  "sourceCommit": "a79bc5023c02345fbd6bb9a64286c9a463e5cf7e",
+  "preparedDate": "2026-10-02",
+  "scope": "Core libraries, their tests and modeled fixtures; excludes product-specific providers, deployment, runtime state and generated artifacts",
+  "files": [
+    {
+      "path": "go.mod",
+      "blob": "fdeebd7f27a8e21c156640dc424fe75a630a2fd4"
+    },
+    {
+      "path": "internal/action/binding.go",
+      "blob": "9fd0cb333fb38e3973d67b0488be11c5be037f2b"
+    },
+    {
+      "path": "internal/action/binding_fuzz_test.go",
+      "blob": "27c923573502d7300d09ce73c9338e1ee924cdfd"
+    },
+    {
+      "path": "internal/action/binding_test.go",
+      "blob": "e7de4e0d3cba389dfda188d0946194f384da9422"
+    },
+    {
+      "path": "internal/action/binding_view.go",
+      "blob": "0f85064cc2cc2d01c9c15ed2753fd5260f5bef87"
+    },
+    {
+      "path": "internal/action/binding_view_test.go",
+      "blob": "07fca773732e2926a2bb4333bf7fcd34c02d5c1b"
+    },
+    {
+      "path": "internal/action/catalog.go",
+      "blob": "d2ec103ab20a7be8cc900d6a792ebac21ad731ce"
+    },
+    {
+      "path": "internal/action/catalog_test.go",
+      "blob": "369675ea99d5f0288c7f4041ffe85921e72875fe"
+    },
+    {
+      "path": "internal/action/parse.go",
+      "blob": "b5bc78b652d84f2af396599b20050d301f605101"
+    },
+    {
+      "path": "internal/action/parse_fuzz_test.go",
+      "blob": "876c4dcbdb86c5ccb4e3948ad6d5cee3208c9eaa"
+    },
+    {
+      "path": "internal/action/parse_test.go",
+      "blob": "c00a0af7e9e645bbc63a90fbbcc406b309aede62"
+    },
+    {
+      "path": "internal/action/testdata/fuzz/FuzzParseHTTPMetadata/2d36d6e667629bbf",
+      "blob": "6a0f928872629c8411d1bc6058b301533c7842fd"
+    },
+    {
+      "path": "internal/action/testdata/independent-vectors.json",
+      "blob": "76817f2e0a9eadaa4c7f2f582bc3fe505e17d235"
+    },
+    {
+      "path": "internal/authn/acceptor.go",
+      "blob": "eb8390708e0d3c3eb33710bf7d0c4a545df2d206"
+    },
+    {
+      "path": "internal/authn/acceptor_test.go",
+      "blob": "0ad4a85c83fea8b9006cf12be4dd21eea80d4bc0"
+    },
+    {
+      "path": "internal/authn/transport_regression_test.go",
+      "blob": "dadf0092479ac60a9a5a5377a7213d8eb42169c5"
+    },
+    {
+      "path": "internal/decision/codec.go",
+      "blob": "9d96da8826a539ad594f74020de34229b00675f4"
+    },
+    {
+      "path": "internal/decision/codec_test.go",
+      "blob": "8a056b3a29c1bf4e19f4696a20a67878a8db9a5a"
+    },
+    {
+      "path": "internal/decision/hardening_test.go",
+      "blob": "2749a7e42c22c92aff4eca80711207ba60f9030d"
+    },
+    {
+      "path": "internal/decision/payload_fuzz_test.go",
+      "blob": "639becd22dca4fa9a80c3f0b8a0ce81253e4ef48"
+    },
+    {
+      "path": "internal/decision/semantics.go",
+      "blob": "6effb1fb8bc5f3aed59e4b81922fb84ce4f4e56e"
+    },
+    {
+      "path": "internal/decision/semantics_test.go",
+      "blob": "fc4dde530c70ac2c730647816ab95c5566faa6e0"
+    },
+    {
+      "path": "internal/decision/testdata/independent-vectors.json",
+      "blob": "53ed470719c7d37624437d6d8b714c1e18890e24"
+    },
+    {
+      "path": "internal/decision/testmodel_test.go",
+      "blob": "253b752872edd7dce3d8f50f2c3c44d77ab765ed"
+    },
+    {
+      "path": "internal/decision/validator.go",
+      "blob": "4d975ad32f62fb1acb96a8a3174f05787c0fe286"
+    },
+    {
+      "path": "internal/decision/validator_test.go",
+      "blob": "54bc3fb3afce78d51020760b7cd4adc64c4bc20e"
+    },
+    {
+      "path": "internal/execution/fault_test.go",
+      "blob": "1fbb5b02e5e0087d270da4939364270b7061cfc5"
+    },
+    {
+      "path": "internal/execution/model_test.go",
+      "blob": "311bac5fce2af9573bf3e39939083c54b2882f78"
+    },
+    {
+      "path": "internal/execution/permitmodel_test.go",
+      "blob": "9663e0239085293b7b37a8cfa9d56bb54d62c1a0"
+    },
+    {
+      "path": "internal/execution/reducer.go",
+      "blob": "ec371c7474e50fe605a2c5cf6323a6ed8f8071ac"
+    },
+    {
+      "path": "internal/execution/reducer_fuzz_test.go",
+      "blob": "5ff5b814c4542867389fae6f961bfb63e1295dd8"
+    },
+    {
+      "path": "internal/execution/reservation_test.go",
+      "blob": "f58df3e9609642cc4a335dcfb58e93abbd43649e"
+    },
+    {
+      "path": "internal/execution/state.go",
+      "blob": "6f4bf5963a5f2b0f9737b5e95732084f8d907368"
+    },
+    {
+      "path": "internal/execution/state_test.go",
+      "blob": "fea2b250fa05504524d7590d9c29e3aeea23276d"
+    },
+    {
+      "path": "internal/execution/topology.go",
+      "blob": "e56d0473feaf0c6908ab50ec4b8d801c39eb6211"
+    },
+    {
+      "path": "internal/execution/topology_test.go",
+      "blob": "bf5bbca531d4c802077968a6a0af3ec414f89935"
+    },
+    {
+      "path": "internal/identity/capacity_test.go",
+      "blob": "a88ad21ab52d05b088dac6349129969a87c1d925"
+    },
+    {
+      "path": "internal/identity/codec.go",
+      "blob": "014187b7f42bd7a7b400c73f83ce187f2e324b4f"
+    },
+    {
+      "path": "internal/identity/codec_test.go",
+      "blob": "987bfd76f4e560d8c27df8f7a0c9bba1dea3ea4b"
+    },
+    {
+      "path": "internal/identity/consumer_test.go",
+      "blob": "327f2f59396fcb0c3624738998705e3606a1c9e0"
+    },
+    {
+      "path": "internal/identity/contract.go",
+      "blob": "5adb67f80ddcba12e5a3ec27da104af3b17245c7"
+    },
+    {
+      "path": "internal/identity/contract_test.go",
+      "blob": "fd6a748c7ab651c304c27fa961f993ecaf009035"
+    },
+    {
+      "path": "internal/identity/freshness_test.go",
+      "blob": "32c9946dec3f88798c87cd25ba7196a89506e4c1"
+    },
+    {
+      "path": "internal/identity/fuzz_test.go",
+      "blob": "15e8fc88040a78456c7bec55004a2860244ce41c"
+    },
+    {
+      "path": "internal/identity/golden_test.go",
+      "blob": "484fa93a9b4ea753f295fb5080a2e703e5e76f0f"
+    },
+    {
+      "path": "internal/identity/lifecycle_test.go",
+      "blob": "8df2cf1e720b740487efe18c98dc12e76550bf2a"
+    },
+    {
+      "path": "internal/identity/measure.go",
+      "blob": "d4a5ccafbe411995f83b27a25b327a53b38308ae"
+    },
+    {
+      "path": "internal/identity/normalized.go",
+      "blob": "dc64231661e59457829dfc30c1359fb695790abf"
+    },
+    {
+      "path": "internal/identity/origin_test.go",
+      "blob": "854071a5ed1da1318369a87762365a2724a7ad61"
+    },
+    {
+      "path": "internal/identity/resolver.go",
+      "blob": "fc8b0258d637cf7b38d583842402bd88f3852948"
+    },
+    {
+      "path": "internal/identity/resolver_test.go",
+      "blob": "e58ff7c3e2c9dddef5696990a5272904ad153fae"
+    },
+    {
+      "path": "internal/identity/testdata/independent-vectors.json",
+      "blob": "aa71946ebace1be453627ff01c6076c4a2873028"
+    },
+    {
+      "path": "internal/identity/testmodel_test.go",
+      "blob": "c687119e5e2bad8bb1c91bb0706612f4d1cd9ac9"
+    },
+    {
+      "path": "internal/identity/validation.go",
+      "blob": "c5ab48d75b6cf5741713896510c33d2c40d800a1"
+    },
+    {
+      "path": "internal/ingress/server.go",
+      "blob": "90677c16001c96be5d17acb17a3c89ee83ad6336"
+    },
+    {
+      "path": "internal/ingress/server_fuzz_test.go",
+      "blob": "9e37327d9f506e62bf3713a37d493a905f45b0c4"
+    },
+    {
+      "path": "internal/ingress/server_test.go",
+      "blob": "59f416ed9f234c219037dc845bd4e1d7daad8779"
+    },
+    {
+      "path": "internal/observation/snapshot.go",
+      "blob": "267572b774712b0509779ca962345e25589c6976"
+    },
+    {
+      "path": "internal/observation/snapshot_test.go",
+      "blob": "802b3808d225066385424ef96ec54a3a6ff6053d"
+    }
+  ],
+  "limitations": "Pre-conformance source import; original module path retained to preserve blob identities. No tagged KIL runtime dependency. Release requires source-bound CodeGuard review and draft/adopted vector receipts."
+}

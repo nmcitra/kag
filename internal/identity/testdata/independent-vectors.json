@@ -1,0 +1,1374 @@
+{
+  "evidence_scope": "modeled",
+  "authority_claim": "NONE: declared metadata encoding only; no transport, identity, eligibility or KTP authentication claim.",
+  "provenance": "Separately authored Python stdlib framing from frozen plan; no implementation inspected/imported.",
+  "metadata_only_notes": [
+    "Root explicitly selected instance-required scalar for byte fixture; no claim it is an admitted runtime granularity.",
+    "Three declared source records only; no claim of complete runtime origin provenance.",
+    "Profile source ContractDigest fill21 equals declared protected Registration.ProfileDigest.",
+    "Direct-message fixture coordination confirmed kind labels profile, mapping and lifecycle; implementation source was not read."
+  ],
+  "field_count": 37,
+  "registration_profile_digest": "2121212121212121212121212121212121212121212121212121212121212121",
+  "registered_source_bounds": {
+    "profile-01": 20000000000,
+    "mapping-01": 20000000000,
+    "lifecycle-01": 5000000000
+  },
+  "encoder_negative_checks": [
+    "duplicate source IDs rejected",
+    "oversized text rejected before append"
+  ],
+  "cases": [
+    {
+      "name": "declared_direct_instance_metadata",
+      "payload_length": 1451,
+      "payload_sha256": "cba55d9dc240f9356fcd51fa914f4be932ed0ef8969b8894e465c72cad850932",
+      "payload_hex": "00010000001e0000001a6b61672e6964656e746974792d70726f6a656374696f6e2f763100020000001c000000186b61672e6964656e746974792d736e617073686f742f763100030000000b0000000774727573742d6100040000000e0000000a636572742d6c6f63616c0005000000500000004c636572742d7368613235363a313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131310006000000201111111111111111111111111111111111111111111111111111111111111111000700000020121212121212121212121212121212121212121212121212121212121212121200080000000800000000000000010009000000081a5e27eef13e0000000a000000081a5e27fce9855800000b000000081a5e27fce9855800000c000000081a5e27eeb5a33600000d000000081a5e27fce9855800000e0000000700000003742d61000f0000000700000003612d31001000000009000000056167656e7400110000001500000011696e7374616e63652d726571756972656400120000000e0100010000000700000003692d3100130000000a00000006646972656374001400000007000000036f2d3100150000000d00000009666f7262696464656e001600000001000017000000080000000000000007001800000008000000000000000c0019000000080000000000000003001a000000080000000000000001001b0000000c00000008656e726f6c6c6564001c0000000b00000007656e61626c6564001d000000090000000576616c6964001e0000000a00000006616374697665001f000000560001000000120000000e6c61622d666978747572652d30310002000000120000000e6c61622e7365745f6d61726b65720003000000201313131313131313131313131313131313131313131313131313131313131313002000000004000000000021000000040000000000220000029e000000030001000000da0001000000100000000c6c6966656379636c652d30310002000000202323232323232323232323232323232323232323232323232323232323232323000300000020333333333333333333333333333333333333333333333333333333333333333300040000000d000000096c6966656379636c65000500000008000000000000000c0006000000081a5e27eef13e00000007000000081a5e27eef13e00000008000000081a5e27eef13e00000009000000081a5e27fce9855800000a000000080000000461676535000b0000000b000000076d6f64656c65640001000000d700010000000e0000000a6d617070696e672d30310002000000202222222222222222222222222222222222222222222222222222222222222222000300000020323232323232323232323232323232323232323232323232323232323232323200040000000b000000076d617070696e6700050000000800000000000000070006000000081a5e27eef13e00000007000000081a5e27eef13e00000008000000081a5e27eef13e00000009000000081a5e27fce9855800000a00000009000000056167653230000b0000000b000000076d6f64656c65640001000000d700010000000e0000000a70726f66696c652d30310002000000202121212121212121212121212121212121212121212121212121212121212121000300000020313131313131313131313131313131313131313131313131313131313131313100040000000b0000000770726f66696c6500050000000800000000000000010006000000081a5e27eef13e00000007000000081a5e27eef13e00000008000000081a5e27eef13e00000009000000081a5e27fce9855800000a00000009000000056167653230000b0000000b000000076d6f64656c65640023000000081a5e27eef13e00000024000000081a5e27f01b43f20000250000000b000000076d6f64656c6564",
+      "declared_input": {
+        "Domain": "kag.identity-projection/v1",
+        "Schema": "kag.identity-snapshot/v1",
+        "TrustDomain": "trust-a",
+        "CredentialProfile": "cert-local",
+        "PrincipalID": "cert-sha256:1111111111111111111111111111111111111111111111111111111111111111",
+        "CredentialDigest": "1111111111111111111111111111111111111111111111111111111111111111",
+        "ConnectionDigest": "1212121212121212121212121212121212121212121212121212121212121212",
+        "TrustRevision": 1,
+        "AuthenticatedUnixNS": 1900000000000000000,
+        "CredentialExpiresUnixNS": 1900000060000000000,
+        "SessionExpiresUnixNS": 1900000060000000000,
+        "TrustValidFromUnixNS": 1899999999000000000,
+        "TrustExpiresUnixNS": 1900000060000000000,
+        "TenantID": "t-a",
+        "ActorID": "a-1",
+        "ActorKind": "agent",
+        "Granularity": "instance-required",
+        "InstanceID": "i-1",
+        "OriginMode": "direct",
+        "OriginID": "o-1",
+        "HumanApplicability": "forbidden",
+        "Human": null,
+        "MappingRevision": 7,
+        "LifecycleRevision": 12,
+        "ContinuityEpoch": 3,
+        "DelegationRevision": 1,
+        "Enrollment": "enrolled",
+        "Authority": "enabled",
+        "CredentialState": "valid",
+        "NodeState": "active",
+        "Scope": {
+          "AudienceID": "lab-fixture-01",
+          "OperationID": "lab.set_marker",
+          "IntentDigest": "1313131313131313131313131313131313131313131313131313131313131313"
+        },
+        "Chain": [],
+        "Context": [],
+        "Sources": [
+          {
+            "SourceID": "profile-01",
+            "ContractDigest": "2121212121212121212121212121212121212121212121212121212121212121",
+            "EvidenceDigest": "3131313131313131313131313131313131313131313131313131313131313131",
+            "Kind": "profile",
+            "Revision": 1,
+            "ObservedUnixNS": 1900000000000000000,
+            "ValidatedUnixNS": 1900000000000000000,
+            "ValidFromUnixNS": 1900000000000000000,
+            "ExpiresUnixNS": 1900000060000000000,
+            "BoundID": "age20",
+            "EvidenceScope": "modeled"
+          },
+          {
+            "SourceID": "mapping-01",
+            "ContractDigest": "2222222222222222222222222222222222222222222222222222222222222222",
+            "EvidenceDigest": "3232323232323232323232323232323232323232323232323232323232323232",
+            "Kind": "mapping",
+            "Revision": 7,
+            "ObservedUnixNS": 1900000000000000000,
+            "ValidatedUnixNS": 1900000000000000000,
+            "ValidFromUnixNS": 1900000000000000000,
+            "ExpiresUnixNS": 1900000060000000000,
+            "BoundID": "age20",
+            "EvidenceScope": "modeled"
+          },
+          {
+            "SourceID": "lifecycle-01",
+            "ContractDigest": "2323232323232323232323232323232323232323232323232323232323232323",
+            "EvidenceDigest": "3333333333333333333333333333333333333333333333333333333333333333",
+            "Kind": "lifecycle",
+            "Revision": 12,
+            "ObservedUnixNS": 1900000000000000000,
+            "ValidatedUnixNS": 1900000000000000000,
+            "ValidFromUnixNS": 1900000000000000000,
+            "ExpiresUnixNS": 1900000060000000000,
+            "BoundID": "age5",
+            "EvidenceScope": "modeled"
+          }
+        ],
+        "EffectiveValidFromUnixNS": 1900000000000000000,
+        "EffectiveExpiresUnixNS": 1900000005000000000,
+        "EvidenceLane": "modeled"
+      },
+      "decoded_fields": {
+        "Domain": "kag.identity-projection/v1",
+        "Schema": "kag.identity-snapshot/v1",
+        "TrustDomain": "trust-a",
+        "CredentialProfile": "cert-local",
+        "PrincipalID": "cert-sha256:1111111111111111111111111111111111111111111111111111111111111111",
+        "CredentialDigest": "1111111111111111111111111111111111111111111111111111111111111111",
+        "ConnectionDigest": "1212121212121212121212121212121212121212121212121212121212121212",
+        "TrustRevision": 1,
+        "AuthenticatedUnixNS": 1900000000000000000,
+        "CredentialExpiresUnixNS": 1900000060000000000,
+        "SessionExpiresUnixNS": 1900000060000000000,
+        "TrustValidFromUnixNS": 1899999999000000000,
+        "TrustExpiresUnixNS": 1900000060000000000,
+        "TenantID": "t-a",
+        "ActorID": "a-1",
+        "ActorKind": "agent",
+        "Granularity": "instance-required",
+        "InstanceID": "i-1",
+        "OriginMode": "direct",
+        "OriginID": "o-1",
+        "HumanApplicability": "forbidden",
+        "Human": null,
+        "MappingRevision": 7,
+        "LifecycleRevision": 12,
+        "ContinuityEpoch": 3,
+        "DelegationRevision": 1,
+        "Enrollment": "enrolled",
+        "Authority": "enabled",
+        "CredentialState": "valid",
+        "NodeState": "active",
+        "Scope": {
+          "AudienceID": "lab-fixture-01",
+          "OperationID": "lab.set_marker",
+          "IntentDigest": "1313131313131313131313131313131313131313131313131313131313131313"
+        },
+        "Chain": [],
+        "Context": [],
+        "Sources": [
+          {
+            "SourceID": "lifecycle-01",
+            "ContractDigest": "2323232323232323232323232323232323232323232323232323232323232323",
+            "EvidenceDigest": "3333333333333333333333333333333333333333333333333333333333333333",
+            "Kind": "lifecycle",
+            "Revision": 12,
+            "ObservedUnixNS": 1900000000000000000,
+            "ValidatedUnixNS": 1900000000000000000,
+            "ValidFromUnixNS": 1900000000000000000,
+            "ExpiresUnixNS": 1900000060000000000,
+            "BoundID": "age5",
+            "EvidenceScope": "modeled"
+          },
+          {
+            "SourceID": "mapping-01",
+            "ContractDigest": "2222222222222222222222222222222222222222222222222222222222222222",
+            "EvidenceDigest": "3232323232323232323232323232323232323232323232323232323232323232",
+            "Kind": "mapping",
+            "Revision": 7,
+            "ObservedUnixNS": 1900000000000000000,
+            "ValidatedUnixNS": 1900000000000000000,
+            "ValidFromUnixNS": 1900000000000000000,
+            "ExpiresUnixNS": 1900000060000000000,
+            "BoundID": "age20",
+            "EvidenceScope": "modeled"
+          },
+          {
+            "SourceID": "profile-01",
+            "ContractDigest": "2121212121212121212121212121212121212121212121212121212121212121",
+            "EvidenceDigest": "3131313131313131313131313131313131313131313131313131313131313131",
+            "Kind": "profile",
+            "Revision": 1,
+            "ObservedUnixNS": 1900000000000000000,
+            "ValidatedUnixNS": 1900000000000000000,
+            "ValidFromUnixNS": 1900000000000000000,
+            "ExpiresUnixNS": 1900000060000000000,
+            "BoundID": "age20",
+            "EvidenceScope": "modeled"
+          }
+        ],
+        "EffectiveValidFromUnixNS": 1900000000000000000,
+        "EffectiveExpiresUnixNS": 1900000005000000000,
+        "EvidenceLane": "modeled"
+      },
+      "note": "Declared scalar encoding fixture only; no authenticated-connection or ActorHandle claim.",
+      "tlv_witness": [
+        {
+          "tag": 1,
+          "offset": 0,
+          "length": 30,
+          "header_hex": "00010000001e",
+          "value_hex": "0000001a6b61672e6964656e746974792d70726f6a656374696f6e2f7631"
+        },
+        {
+          "tag": 2,
+          "offset": 36,
+          "length": 28,
+          "header_hex": "00020000001c",
+          "value_hex": "000000186b61672e6964656e746974792d736e617073686f742f7631"
+        },
+        {
+          "tag": 3,
+          "offset": 70,
+          "length": 11,
+          "header_hex": "00030000000b",
+          "value_hex": "0000000774727573742d61"
+        },
+        {
+          "tag": 4,
+          "offset": 87,
+          "length": 14,
+          "header_hex": "00040000000e",
+          "value_hex": "0000000a636572742d6c6f63616c"
+        },
+        {
+          "tag": 5,
+          "offset": 107,
+          "length": 80,
+          "header_hex": "000500000050",
+          "value_hex": "0000004c636572742d7368613235363a31313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131"
+        },
+        {
+          "tag": 6,
+          "offset": 193,
+          "length": 32,
+          "header_hex": "000600000020",
+          "value_hex": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        {
+          "tag": 7,
+          "offset": 231,
+          "length": 32,
+          "header_hex": "000700000020",
+          "value_hex": "1212121212121212121212121212121212121212121212121212121212121212"
+        },
+        {
+          "tag": 8,
+          "offset": 269,
+          "length": 8,
+          "header_hex": "000800000008",
+          "value_hex": "0000000000000001"
+        },
+        {
+          "tag": 9,
+          "offset": 283,
+          "length": 8,
+          "header_hex": "000900000008",
+          "value_hex": "1a5e27eef13e0000"
+        },
+        {
+          "tag": 10,
+          "offset": 297,
+          "length": 8,
+          "header_hex": "000a00000008",
+          "value_hex": "1a5e27fce9855800"
+        },
+        {
+          "tag": 11,
+          "offset": 311,
+          "length": 8,
+          "header_hex": "000b00000008",
+          "value_hex": "1a5e27fce9855800"
+        },
+        {
+          "tag": 12,
+          "offset": 325,
+          "length": 8,
+          "header_hex": "000c00000008",
+          "value_hex": "1a5e27eeb5a33600"
+        },
+        {
+          "tag": 13,
+          "offset": 339,
+          "length": 8,
+          "header_hex": "000d00000008",
+          "value_hex": "1a5e27fce9855800"
+        },
+        {
+          "tag": 14,
+          "offset": 353,
+          "length": 7,
+          "header_hex": "000e00000007",
+          "value_hex": "00000003742d61"
+        },
+        {
+          "tag": 15,
+          "offset": 366,
+          "length": 7,
+          "header_hex": "000f00000007",
+          "value_hex": "00000003612d31"
+        },
+        {
+          "tag": 16,
+          "offset": 379,
+          "length": 9,
+          "header_hex": "001000000009",
+          "value_hex": "000000056167656e74"
+        },
+        {
+          "tag": 17,
+          "offset": 394,
+          "length": 21,
+          "header_hex": "001100000015",
+          "value_hex": "00000011696e7374616e63652d7265717569726564"
+        },
+        {
+          "tag": 18,
+          "offset": 421,
+          "length": 14,
+          "header_hex": "00120000000e",
+          "value_hex": "0100010000000700000003692d31"
+        },
+        {
+          "tag": 19,
+          "offset": 441,
+          "length": 10,
+          "header_hex": "00130000000a",
+          "value_hex": "00000006646972656374"
+        },
+        {
+          "tag": 20,
+          "offset": 457,
+          "length": 7,
+          "header_hex": "001400000007",
+          "value_hex": "000000036f2d31"
+        },
+        {
+          "tag": 21,
+          "offset": 470,
+          "length": 13,
+          "header_hex": "00150000000d",
+          "value_hex": "00000009666f7262696464656e"
+        },
+        {
+          "tag": 22,
+          "offset": 489,
+          "length": 1,
+          "header_hex": "001600000001",
+          "value_hex": "00"
+        },
+        {
+          "tag": 23,
+          "offset": 496,
+          "length": 8,
+          "header_hex": "001700000008",
+          "value_hex": "0000000000000007"
+        },
+        {
+          "tag": 24,
+          "offset": 510,
+          "length": 8,
+          "header_hex": "001800000008",
+          "value_hex": "000000000000000c"
+        },
+        {
+          "tag": 25,
+          "offset": 524,
+          "length": 8,
+          "header_hex": "001900000008",
+          "value_hex": "0000000000000003"
+        },
+        {
+          "tag": 26,
+          "offset": 538,
+          "length": 8,
+          "header_hex": "001a00000008",
+          "value_hex": "0000000000000001"
+        },
+        {
+          "tag": 27,
+          "offset": 552,
+          "length": 12,
+          "header_hex": "001b0000000c",
+          "value_hex": "00000008656e726f6c6c6564"
+        },
+        {
+          "tag": 28,
+          "offset": 570,
+          "length": 11,
+          "header_hex": "001c0000000b",
+          "value_hex": "00000007656e61626c6564"
+        },
+        {
+          "tag": 29,
+          "offset": 587,
+          "length": 9,
+          "header_hex": "001d00000009",
+          "value_hex": "0000000576616c6964"
+        },
+        {
+          "tag": 30,
+          "offset": 602,
+          "length": 10,
+          "header_hex": "001e0000000a",
+          "value_hex": "00000006616374697665"
+        },
+        {
+          "tag": 31,
+          "offset": 618,
+          "length": 86,
+          "header_hex": "001f00000056",
+          "value_hex": "0001000000120000000e6c61622d666978747572652d30310002000000120000000e6c61622e7365745f6d61726b65720003000000201313131313131313131313131313131313131313131313131313131313131313"
+        },
+        {
+          "tag": 32,
+          "offset": 710,
+          "length": 4,
+          "header_hex": "002000000004",
+          "value_hex": "00000000"
+        },
+        {
+          "tag": 33,
+          "offset": 720,
+          "length": 4,
+          "header_hex": "002100000004",
+          "value_hex": "00000000"
+        },
+        {
+          "tag": 34,
+          "offset": 730,
+          "length": 670,
+          "header_hex": "00220000029e",
+          "value_hex": "000000030001000000da0001000000100000000c6c6966656379636c652d30310002000000202323232323232323232323232323232323232323232323232323232323232323000300000020333333333333333333333333333333333333333333333333333333333333333300040000000d000000096c6966656379636c65000500000008000000000000000c0006000000081a5e27eef13e00000007000000081a5e27eef13e00000008000000081a5e27eef13e00000009000000081a5e27fce9855800000a000000080000000461676535000b0000000b000000076d6f64656c65640001000000d700010000000e0000000a6d617070696e672d30310002000000202222222222222222222222222222222222222222222222222222222222222222000300000020323232323232323232323232323232323232323232323232323232323232323200040000000b000000076d617070696e6700050000000800000000000000070006000000081a5e27eef13e00000007000000081a5e27eef13e00000008000000081a5e27eef13e00000009000000081a5e27fce9855800000a00000009000000056167653230000b0000000b000000076d6f64656c65640001000000d700010000000e0000000a70726f66696c652d30310002000000202121212121212121212121212121212121212121212121212121212121212121000300000020313131313131313131313131313131313131313131313131313131313131313100040000000b0000000770726f66696c6500050000000800000000000000010006000000081a5e27eef13e00000007000000081a5e27eef13e00000008000000081a5e27eef13e00000009000000081a5e27fce9855800000a00000009000000056167653230000b0000000b000000076d6f64656c6564"
+        },
+        {
+          "tag": 35,
+          "offset": 1406,
+          "length": 8,
+          "header_hex": "002300000008",
+          "value_hex": "1a5e27eef13e0000"
+        },
+        {
+          "tag": 36,
+          "offset": 1420,
+          "length": 8,
+          "header_hex": "002400000008",
+          "value_hex": "1a5e27f01b43f200"
+        },
+        {
+          "tag": 37,
+          "offset": 1434,
+          "length": 11,
+          "header_hex": "00250000000b",
+          "value_hex": "000000076d6f64656c6564"
+        }
+      ],
+      "negative_decoder_checks": {
+        "trailing": "trailing record bytes",
+        "truncated": "field length/truncation",
+        "oversize_8193": "record bound",
+        "missing_last": "missing/truncated record field",
+        "duplicate_tag": "unknown/duplicate/reordered tag",
+        "unknown_tag": "unknown/duplicate/reordered tag",
+        "reordered_tag": "unknown/duplicate/reordered tag",
+        "domain_inner_length_mismatch": "inner text length",
+        "optional_invalid_presence": "optional instance presence",
+        "negative_timestamp": "timestamp length/sign",
+        "source_count_9": "source count bound",
+        "source_wire_order_reversed": "source canonical order/duplicate",
+        "nested_source_unknown_tag": "unknown/duplicate/reordered tag"
+      },
+      "reversed_source_input_same_bytes": true
+    },
+    {
+      "name": "changed_lifecycle_revision",
+      "payload_length": 1451,
+      "payload_sha256": "f7c755cd17d3d3fc26b9caeeba83a15fc31b4eb37adb142693b86f38cd76ac43",
+      "payload_hex": "00010000001e0000001a6b61672e6964656e746974792d70726f6a656374696f6e2f763100020000001c000000186b61672e6964656e746974792d736e617073686f742f763100030000000b0000000774727573742d6100040000000e0000000a636572742d6c6f63616c0005000000500000004c636572742d7368613235363a313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131310006000000201111111111111111111111111111111111111111111111111111111111111111000700000020121212121212121212121212121212121212121212121212121212121212121200080000000800000000000000010009000000081a5e27eef13e0000000a000000081a5e27fce9855800000b000000081a5e27fce9855800000c000000081a5e27eeb5a33600000d000000081a5e27fce9855800000e0000000700000003742d61000f0000000700000003612d31001000000009000000056167656e7400110000001500000011696e7374616e63652d726571756972656400120000000e0100010000000700000003692d3100130000000a00000006646972656374001400000007000000036f2d3100150000000d00000009666f7262696464656e001600000001000017000000080000000000000007001800000008000000000000000d0019000000080000000000000003001a000000080000000000000001001b0000000c00000008656e726f6c6c6564001c0000000b00000007656e61626c6564001d000000090000000576616c6964001e0000000a00000006616374697665001f000000560001000000120000000e6c61622d666978747572652d30310002000000120000000e6c61622e7365745f6d61726b65720003000000201313131313131313131313131313131313131313131313131313131313131313002000000004000000000021000000040000000000220000029e000000030001000000da0001000000100000000c6c6966656379636c652d30310002000000202323232323232323232323232323232323232323232323232323232323232323000300000020333333333333333333333333333333333333333333333333333333333333333300040000000d000000096c6966656379636c65000500000008000000000000000d0006000000081a5e27eef13e00000007000000081a5e27eef13e00000008000000081a5e27eef13e00000009000000081a5e27fce9855800000a000000080000000461676535000b0000000b000000076d6f64656c65640001000000d700010000000e0000000a6d617070696e672d30310002000000202222222222222222222222222222222222222222222222222222222222222222000300000020323232323232323232323232323232323232323232323232323232323232323200040000000b000000076d617070696e6700050000000800000000000000070006000000081a5e27eef13e00000007000000081a5e27eef13e00000008000000081a5e27eef13e00000009000000081a5e27fce9855800000a00000009000000056167653230000b0000000b000000076d6f64656c65640001000000d700010000000e0000000a70726f66696c652d30310002000000202121212121212121212121212121212121212121212121212121212121212121000300000020313131313131313131313131313131313131313131313131313131313131313100040000000b0000000770726f66696c6500050000000800000000000000010006000000081a5e27eef13e00000007000000081a5e27eef13e00000008000000081a5e27eef13e00000009000000081a5e27fce9855800000a00000009000000056167653230000b0000000b000000076d6f64656c65640023000000081a5e27eef13e00000024000000081a5e27f01b43f20000250000000b000000076d6f64656c6564",
+      "declared_input": {
+        "Domain": "kag.identity-projection/v1",
+        "Schema": "kag.identity-snapshot/v1",
+        "TrustDomain": "trust-a",
+        "CredentialProfile": "cert-local",
+        "PrincipalID": "cert-sha256:1111111111111111111111111111111111111111111111111111111111111111",
+        "CredentialDigest": "1111111111111111111111111111111111111111111111111111111111111111",
+        "ConnectionDigest": "1212121212121212121212121212121212121212121212121212121212121212",
+        "TrustRevision": 1,
+        "AuthenticatedUnixNS": 1900000000000000000,
+        "CredentialExpiresUnixNS": 1900000060000000000,
+        "SessionExpiresUnixNS": 1900000060000000000,
+        "TrustValidFromUnixNS": 1899999999000000000,
+        "TrustExpiresUnixNS": 1900000060000000000,
+        "TenantID": "t-a",
+        "ActorID": "a-1",
+        "ActorKind": "agent",
+        "Granularity": "instance-required",
+        "InstanceID": "i-1",
+        "OriginMode": "direct",
+        "OriginID": "o-1",
+        "HumanApplicability": "forbidden",
+        "Human": null,
+        "MappingRevision": 7,
+        "LifecycleRevision": 13,
+        "ContinuityEpoch": 3,
+        "DelegationRevision": 1,
+        "Enrollment": "enrolled",
+        "Authority": "enabled",
+        "CredentialState": "valid",
+        "NodeState": "active",
+        "Scope": {
+          "AudienceID": "lab-fixture-01",
+          "OperationID": "lab.set_marker",
+          "IntentDigest": "1313131313131313131313131313131313131313131313131313131313131313"
+        },
+        "Chain": [],
+        "Context": [],
+        "Sources": [
+          {
+            "SourceID": "profile-01",
+            "ContractDigest": "2121212121212121212121212121212121212121212121212121212121212121",
+            "EvidenceDigest": "3131313131313131313131313131313131313131313131313131313131313131",
+            "Kind": "profile",
+            "Revision": 1,
+            "ObservedUnixNS": 1900000000000000000,
+            "ValidatedUnixNS": 1900000000000000000,
+            "ValidFromUnixNS": 1900000000000000000,
+            "ExpiresUnixNS": 1900000060000000000,
+            "BoundID": "age20",
+            "EvidenceScope": "modeled"
+          },
+          {
+            "SourceID": "mapping-01",
+            "ContractDigest": "2222222222222222222222222222222222222222222222222222222222222222",
+            "EvidenceDigest": "3232323232323232323232323232323232323232323232323232323232323232",
+            "Kind": "mapping",
+            "Revision": 7,
+            "ObservedUnixNS": 1900000000000000000,
+            "ValidatedUnixNS": 1900000000000000000,
+            "ValidFromUnixNS": 1900000000000000000,
+            "ExpiresUnixNS": 1900000060000000000,
+            "BoundID": "age20",
+            "EvidenceScope": "modeled"
+          },
+          {
+            "SourceID": "lifecycle-01",
+            "ContractDigest": "2323232323232323232323232323232323232323232323232323232323232323",
+            "EvidenceDigest": "3333333333333333333333333333333333333333333333333333333333333333",
+            "Kind": "lifecycle",
+            "Revision": 13,
+            "ObservedUnixNS": 1900000000000000000,
+            "ValidatedUnixNS": 1900000000000000000,
+            "ValidFromUnixNS": 1900000000000000000,
+            "ExpiresUnixNS": 1900000060000000000,
+            "BoundID": "age5",
+            "EvidenceScope": "modeled"
+          }
+        ],
+        "EffectiveValidFromUnixNS": 1900000000000000000,
+        "EffectiveExpiresUnixNS": 1900000005000000000,
+        "EvidenceLane": "modeled"
+      },
+      "decoded_fields": {
+        "Domain": "kag.identity-projection/v1",
+        "Schema": "kag.identity-snapshot/v1",
+        "TrustDomain": "trust-a",
+        "CredentialProfile": "cert-local",
+        "PrincipalID": "cert-sha256:1111111111111111111111111111111111111111111111111111111111111111",
+        "CredentialDigest": "1111111111111111111111111111111111111111111111111111111111111111",
+        "ConnectionDigest": "1212121212121212121212121212121212121212121212121212121212121212",
+        "TrustRevision": 1,
+        "AuthenticatedUnixNS": 1900000000000000000,
+        "CredentialExpiresUnixNS": 1900000060000000000,
+        "SessionExpiresUnixNS": 1900000060000000000,
+        "TrustValidFromUnixNS": 1899999999000000000,
+        "TrustExpiresUnixNS": 1900000060000000000,
+        "TenantID": "t-a",
+        "ActorID": "a-1",
+        "ActorKind": "agent",
+        "Granularity": "instance-required",
+        "InstanceID": "i-1",
+        "OriginMode": "direct",
+        "OriginID": "o-1",
+        "HumanApplicability": "forbidden",
+        "Human": null,
+        "MappingRevision": 7,
+        "LifecycleRevision": 13,
+        "ContinuityEpoch": 3,
+        "DelegationRevision": 1,
+        "Enrollment": "enrolled",
+        "Authority": "enabled",
+        "CredentialState": "valid",
+        "NodeState": "active",
+        "Scope": {
+          "AudienceID": "lab-fixture-01",
+          "OperationID": "lab.set_marker",
+          "IntentDigest": "1313131313131313131313131313131313131313131313131313131313131313"
+        },
+        "Chain": [],
+        "Context": [],
+        "Sources": [
+          {
+            "SourceID": "lifecycle-01",
+            "ContractDigest": "2323232323232323232323232323232323232323232323232323232323232323",
+            "EvidenceDigest": "3333333333333333333333333333333333333333333333333333333333333333",
+            "Kind": "lifecycle",
+            "Revision": 13,
+            "ObservedUnixNS": 1900000000000000000,
+            "ValidatedUnixNS": 1900000000000000000,
+            "ValidFromUnixNS": 1900000000000000000,
+            "ExpiresUnixNS": 1900000060000000000,
+            "BoundID": "age5",
+            "EvidenceScope": "modeled"
+          },
+          {
+            "SourceID": "mapping-01",
+            "ContractDigest": "2222222222222222222222222222222222222222222222222222222222222222",
+            "EvidenceDigest": "3232323232323232323232323232323232323232323232323232323232323232",
+            "Kind": "mapping",
+            "Revision": 7,
+            "ObservedUnixNS": 1900000000000000000,
+            "ValidatedUnixNS": 1900000000000000000,
+            "ValidFromUnixNS": 1900000000000000000,
+            "ExpiresUnixNS": 1900000060000000000,
+            "BoundID": "age20",
+            "EvidenceScope": "modeled"
+          },
+          {
+            "SourceID": "profile-01",
+            "ContractDigest": "2121212121212121212121212121212121212121212121212121212121212121",
+            "EvidenceDigest": "3131313131313131313131313131313131313131313131313131313131313131",
+            "Kind": "profile",
+            "Revision": 1,
+            "ObservedUnixNS": 1900000000000000000,
+            "ValidatedUnixNS": 1900000000000000000,
+            "ValidFromUnixNS": 1900000000000000000,
+            "ExpiresUnixNS": 1900000060000000000,
+            "BoundID": "age20",
+            "EvidenceScope": "modeled"
+          }
+        ],
+        "EffectiveValidFromUnixNS": 1900000000000000000,
+        "EffectiveExpiresUnixNS": 1900000005000000000,
+        "EvidenceLane": "modeled"
+      },
+      "note": "Changing lifecycle revision and its source reference changes projection bytes and SHA; no acceptance claim.",
+      "tlv_witness": [
+        {
+          "tag": 1,
+          "offset": 0,
+          "length": 30,
+          "header_hex": "00010000001e",
+          "value_hex": "0000001a6b61672e6964656e746974792d70726f6a656374696f6e2f7631"
+        },
+        {
+          "tag": 2,
+          "offset": 36,
+          "length": 28,
+          "header_hex": "00020000001c",
+          "value_hex": "000000186b61672e6964656e746974792d736e617073686f742f7631"
+        },
+        {
+          "tag": 3,
+          "offset": 70,
+          "length": 11,
+          "header_hex": "00030000000b",
+          "value_hex": "0000000774727573742d61"
+        },
+        {
+          "tag": 4,
+          "offset": 87,
+          "length": 14,
+          "header_hex": "00040000000e",
+          "value_hex": "0000000a636572742d6c6f63616c"
+        },
+        {
+          "tag": 5,
+          "offset": 107,
+          "length": 80,
+          "header_hex": "000500000050",
+          "value_hex": "0000004c636572742d7368613235363a31313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131"
+        },
+        {
+          "tag": 6,
+          "offset": 193,
+          "length": 32,
+          "header_hex": "000600000020",
+          "value_hex": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        {
+          "tag": 7,
+          "offset": 231,
+          "length": 32,
+          "header_hex": "000700000020",
+          "value_hex": "1212121212121212121212121212121212121212121212121212121212121212"
+        },
+        {
+          "tag": 8,
+          "offset": 269,
+          "length": 8,
+          "header_hex": "000800000008",
+          "value_hex": "0000000000000001"
+        },
+        {
+          "tag": 9,
+          "offset": 283,
+          "length": 8,
+          "header_hex": "000900000008",
+          "value_hex": "1a5e27eef13e0000"
+        },
+        {
+          "tag": 10,
+          "offset": 297,
+          "length": 8,
+          "header_hex": "000a00000008",
+          "value_hex": "1a5e27fce9855800"
+        },
+        {
+          "tag": 11,
+          "offset": 311,
+          "length": 8,
+          "header_hex": "000b00000008",
+          "value_hex": "1a5e27fce9855800"
+        },
+        {
+          "tag": 12,
+          "offset": 325,
+          "length": 8,
+          "header_hex": "000c00000008",
+          "value_hex": "1a5e27eeb5a33600"
+        },
+        {
+          "tag": 13,
+          "offset": 339,
+          "length": 8,
+          "header_hex": "000d00000008",
+          "value_hex": "1a5e27fce9855800"
+        },
+        {
+          "tag": 14,
+          "offset": 353,
+          "length": 7,
+          "header_hex": "000e00000007",
+          "value_hex": "00000003742d61"
+        },
+        {
+          "tag": 15,
+          "offset": 366,
+          "length": 7,
+          "header_hex": "000f00000007",
+          "value_hex": "00000003612d31"
+        },
+        {
+          "tag": 16,
+          "offset": 379,
+          "length": 9,
+          "header_hex": "001000000009",
+          "value_hex": "000000056167656e74"
+        },
+        {
+          "tag": 17,
+          "offset": 394,
+          "length": 21,
+          "header_hex": "001100000015",
+          "value_hex": "00000011696e7374616e63652d7265717569726564"
+        },
+        {
+          "tag": 18,
+          "offset": 421,
+          "length": 14,
+          "header_hex": "00120000000e",
+          "value_hex": "0100010000000700000003692d31"
+        },
+        {
+          "tag": 19,
+          "offset": 441,
+          "length": 10,
+          "header_hex": "00130000000a",
+          "value_hex": "00000006646972656374"
+        },
+        {
+          "tag": 20,
+          "offset": 457,
+          "length": 7,
+          "header_hex": "001400000007",
+          "value_hex": "000000036f2d31"
+        },
+        {
+          "tag": 21,
+          "offset": 470,
+          "length": 13,
+          "header_hex": "00150000000d",
+          "value_hex": "00000009666f7262696464656e"
+        },
+        {
+          "tag": 22,
+          "offset": 489,
+          "length": 1,
+          "header_hex": "001600000001",
+          "value_hex": "00"
+        },
+        {
+          "tag": 23,
+          "offset": 496,
+          "length": 8,
+          "header_hex": "001700000008",
+          "value_hex": "0000000000000007"
+        },
+        {
+          "tag": 24,
+          "offset": 510,
+          "length": 8,
+          "header_hex": "001800000008",
+          "value_hex": "000000000000000d"
+        },
+        {
+          "tag": 25,
+          "offset": 524,
+          "length": 8,
+          "header_hex": "001900000008",
+          "value_hex": "0000000000000003"
+        },
+        {
+          "tag": 26,
+          "offset": 538,
+          "length": 8,
+          "header_hex": "001a00000008",
+          "value_hex": "0000000000000001"
+        },
+        {
+          "tag": 27,
+          "offset": 552,
+          "length": 12,
+          "header_hex": "001b0000000c",
+          "value_hex": "00000008656e726f6c6c6564"
+        },
+        {
+          "tag": 28,
+          "offset": 570,
+          "length": 11,
+          "header_hex": "001c0000000b",
+          "value_hex": "00000007656e61626c6564"
+        },
+        {
+          "tag": 29,
+          "offset": 587,
+          "length": 9,
+          "header_hex": "001d00000009",
+          "value_hex": "0000000576616c6964"
+        },
+        {
+          "tag": 30,
+          "offset": 602,
+          "length": 10,
+          "header_hex": "001e0000000a",
+          "value_hex": "00000006616374697665"
+        },
+        {
+          "tag": 31,
+          "offset": 618,
+          "length": 86,
+          "header_hex": "001f00000056",
+          "value_hex": "0001000000120000000e6c61622d666978747572652d30310002000000120000000e6c61622e7365745f6d61726b65720003000000201313131313131313131313131313131313131313131313131313131313131313"
+        },
+        {
+          "tag": 32,
+          "offset": 710,
+          "length": 4,
+          "header_hex": "002000000004",
+          "value_hex": "00000000"
+        },
+        {
+          "tag": 33,
+          "offset": 720,
+          "length": 4,
+          "header_hex": "002100000004",
+          "value_hex": "00000000"
+        },
+        {
+          "tag": 34,
+          "offset": 730,
+          "length": 670,
+          "header_hex": "00220000029e",
+          "value_hex": "000000030001000000da0001000000100000000c6c6966656379636c652d30310002000000202323232323232323232323232323232323232323232323232323232323232323000300000020333333333333333333333333333333333333333333333333333333333333333300040000000d000000096c6966656379636c65000500000008000000000000000d0006000000081a5e27eef13e00000007000000081a5e27eef13e00000008000000081a5e27eef13e00000009000000081a5e27fce9855800000a000000080000000461676535000b0000000b000000076d6f64656c65640001000000d700010000000e0000000a6d617070696e672d30310002000000202222222222222222222222222222222222222222222222222222222222222222000300000020323232323232323232323232323232323232323232323232323232323232323200040000000b000000076d617070696e6700050000000800000000000000070006000000081a5e27eef13e00000007000000081a5e27eef13e00000008000000081a5e27eef13e00000009000000081a5e27fce9855800000a00000009000000056167653230000b0000000b000000076d6f64656c65640001000000d700010000000e0000000a70726f66696c652d30310002000000202121212121212121212121212121212121212121212121212121212121212121000300000020313131313131313131313131313131313131313131313131313131313131313100040000000b0000000770726f66696c6500050000000800000000000000010006000000081a5e27eef13e00000007000000081a5e27eef13e00000008000000081a5e27eef13e00000009000000081a5e27fce9855800000a00000009000000056167653230000b0000000b000000076d6f64656c6564"
+        },
+        {
+          "tag": 35,
+          "offset": 1406,
+          "length": 8,
+          "header_hex": "002300000008",
+          "value_hex": "1a5e27eef13e0000"
+        },
+        {
+          "tag": 36,
+          "offset": 1420,
+          "length": 8,
+          "header_hex": "002400000008",
+          "value_hex": "1a5e27f01b43f200"
+        },
+        {
+          "tag": 37,
+          "offset": 1434,
+          "length": 11,
+          "header_hex": "00250000000b",
+          "value_hex": "000000076d6f64656c6564"
+        }
+      ],
+      "negative_decoder_checks": {
+        "trailing": "trailing record bytes",
+        "truncated": "field length/truncation",
+        "oversize_8193": "record bound",
+        "missing_last": "missing/truncated record field",
+        "duplicate_tag": "unknown/duplicate/reordered tag",
+        "unknown_tag": "unknown/duplicate/reordered tag",
+        "reordered_tag": "unknown/duplicate/reordered tag",
+        "domain_inner_length_mismatch": "inner text length",
+        "optional_invalid_presence": "optional instance presence",
+        "negative_timestamp": "timestamp length/sign",
+        "source_count_9": "source count bound",
+        "source_wire_order_reversed": "source canonical order/duplicate",
+        "nested_source_unknown_tag": "unknown/duplicate/reordered tag"
+      },
+      "reversed_source_input_same_bytes": true
+    },
+    {
+      "name": "absent_instance_framing_only",
+      "payload_length": 1438,
+      "payload_sha256": "2a8a0381f92fc245986408a80bfe2c85eb3d3247fb66981014ddfb69055e0ef4",
+      "payload_hex": "00010000001e0000001a6b61672e6964656e746974792d70726f6a656374696f6e2f763100020000001c000000186b61672e6964656e746974792d736e617073686f742f763100030000000b0000000774727573742d6100040000000e0000000a636572742d6c6f63616c0005000000500000004c636572742d7368613235363a313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131310006000000201111111111111111111111111111111111111111111111111111111111111111000700000020121212121212121212121212121212121212121212121212121212121212121200080000000800000000000000010009000000081a5e27eef13e0000000a000000081a5e27fce9855800000b000000081a5e27fce9855800000c000000081a5e27eeb5a33600000d000000081a5e27fce9855800000e0000000700000003742d61000f0000000700000003612d31001000000009000000056167656e7400110000001500000011696e7374616e63652d72657175697265640012000000010000130000000a00000006646972656374001400000007000000036f2d3100150000000d00000009666f7262696464656e001600000001000017000000080000000000000007001800000008000000000000000c0019000000080000000000000003001a000000080000000000000001001b0000000c00000008656e726f6c6c6564001c0000000b00000007656e61626c6564001d000000090000000576616c6964001e0000000a00000006616374697665001f000000560001000000120000000e6c61622d666978747572652d30310002000000120000000e6c61622e7365745f6d61726b65720003000000201313131313131313131313131313131313131313131313131313131313131313002000000004000000000021000000040000000000220000029e000000030001000000da0001000000100000000c6c6966656379636c652d30310002000000202323232323232323232323232323232323232323232323232323232323232323000300000020333333333333333333333333333333333333333333333333333333333333333300040000000d000000096c6966656379636c65000500000008000000000000000c0006000000081a5e27eef13e00000007000000081a5e27eef13e00000008000000081a5e27eef13e00000009000000081a5e27fce9855800000a000000080000000461676535000b0000000b000000076d6f64656c65640001000000d700010000000e0000000a6d617070696e672d30310002000000202222222222222222222222222222222222222222222222222222222222222222000300000020323232323232323232323232323232323232323232323232323232323232323200040000000b000000076d617070696e6700050000000800000000000000070006000000081a5e27eef13e00000007000000081a5e27eef13e00000008000000081a5e27eef13e00000009000000081a5e27fce9855800000a00000009000000056167653230000b0000000b000000076d6f64656c65640001000000d700010000000e0000000a70726f66696c652d30310002000000202121212121212121212121212121212121212121212121212121212121212121000300000020313131313131313131313131313131313131313131313131313131313131313100040000000b0000000770726f66696c6500050000000800000000000000010006000000081a5e27eef13e00000007000000081a5e27eef13e00000008000000081a5e27eef13e00000009000000081a5e27fce9855800000a00000009000000056167653230000b0000000b000000076d6f64656c65640023000000081a5e27eef13e00000024000000081a5e27f01b43f20000250000000b000000076d6f64656c6564",
+      "declared_input": {
+        "Domain": "kag.identity-projection/v1",
+        "Schema": "kag.identity-snapshot/v1",
+        "TrustDomain": "trust-a",
+        "CredentialProfile": "cert-local",
+        "PrincipalID": "cert-sha256:1111111111111111111111111111111111111111111111111111111111111111",
+        "CredentialDigest": "1111111111111111111111111111111111111111111111111111111111111111",
+        "ConnectionDigest": "1212121212121212121212121212121212121212121212121212121212121212",
+        "TrustRevision": 1,
+        "AuthenticatedUnixNS": 1900000000000000000,
+        "CredentialExpiresUnixNS": 1900000060000000000,
+        "SessionExpiresUnixNS": 1900000060000000000,
+        "TrustValidFromUnixNS": 1899999999000000000,
+        "TrustExpiresUnixNS": 1900000060000000000,
+        "TenantID": "t-a",
+        "ActorID": "a-1",
+        "ActorKind": "agent",
+        "Granularity": "instance-required",
+        "InstanceID": null,
+        "OriginMode": "direct",
+        "OriginID": "o-1",
+        "HumanApplicability": "forbidden",
+        "Human": null,
+        "MappingRevision": 7,
+        "LifecycleRevision": 12,
+        "ContinuityEpoch": 3,
+        "DelegationRevision": 1,
+        "Enrollment": "enrolled",
+        "Authority": "enabled",
+        "CredentialState": "valid",
+        "NodeState": "active",
+        "Scope": {
+          "AudienceID": "lab-fixture-01",
+          "OperationID": "lab.set_marker",
+          "IntentDigest": "1313131313131313131313131313131313131313131313131313131313131313"
+        },
+        "Chain": [],
+        "Context": [],
+        "Sources": [
+          {
+            "SourceID": "profile-01",
+            "ContractDigest": "2121212121212121212121212121212121212121212121212121212121212121",
+            "EvidenceDigest": "3131313131313131313131313131313131313131313131313131313131313131",
+            "Kind": "profile",
+            "Revision": 1,
+            "ObservedUnixNS": 1900000000000000000,
+            "ValidatedUnixNS": 1900000000000000000,
+            "ValidFromUnixNS": 1900000000000000000,
+            "ExpiresUnixNS": 1900000060000000000,
+            "BoundID": "age20",
+            "EvidenceScope": "modeled"
+          },
+          {
+            "SourceID": "mapping-01",
+            "ContractDigest": "2222222222222222222222222222222222222222222222222222222222222222",
+            "EvidenceDigest": "3232323232323232323232323232323232323232323232323232323232323232",
+            "Kind": "mapping",
+            "Revision": 7,
+            "ObservedUnixNS": 1900000000000000000,
+            "ValidatedUnixNS": 1900000000000000000,
+            "ValidFromUnixNS": 1900000000000000000,
+            "ExpiresUnixNS": 1900000060000000000,
+            "BoundID": "age20",
+            "EvidenceScope": "modeled"
+          },
+          {
+            "SourceID": "lifecycle-01",
+            "ContractDigest": "2323232323232323232323232323232323232323232323232323232323232323",
+            "EvidenceDigest": "3333333333333333333333333333333333333333333333333333333333333333",
+            "Kind": "lifecycle",
+            "Revision": 12,
+            "ObservedUnixNS": 1900000000000000000,
+            "ValidatedUnixNS": 1900000000000000000,
+            "ValidFromUnixNS": 1900000000000000000,
+            "ExpiresUnixNS": 1900000060000000000,
+            "BoundID": "age5",
+            "EvidenceScope": "modeled"
+          }
+        ],
+        "EffectiveValidFromUnixNS": 1900000000000000000,
+        "EffectiveExpiresUnixNS": 1900000005000000000,
+        "EvidenceLane": "modeled"
+      },
+      "decoded_fields": {
+        "Domain": "kag.identity-projection/v1",
+        "Schema": "kag.identity-snapshot/v1",
+        "TrustDomain": "trust-a",
+        "CredentialProfile": "cert-local",
+        "PrincipalID": "cert-sha256:1111111111111111111111111111111111111111111111111111111111111111",
+        "CredentialDigest": "1111111111111111111111111111111111111111111111111111111111111111",
+        "ConnectionDigest": "1212121212121212121212121212121212121212121212121212121212121212",
+        "TrustRevision": 1,
+        "AuthenticatedUnixNS": 1900000000000000000,
+        "CredentialExpiresUnixNS": 1900000060000000000,
+        "SessionExpiresUnixNS": 1900000060000000000,
+        "TrustValidFromUnixNS": 1899999999000000000,
+        "TrustExpiresUnixNS": 1900000060000000000,
+        "TenantID": "t-a",
+        "ActorID": "a-1",
+        "ActorKind": "agent",
+        "Granularity": "instance-required",
+        "InstanceID": null,
+        "OriginMode": "direct",
+        "OriginID": "o-1",
+        "HumanApplicability": "forbidden",
+        "Human": null,
+        "MappingRevision": 7,
+        "LifecycleRevision": 12,
+        "ContinuityEpoch": 3,
+        "DelegationRevision": 1,
+        "Enrollment": "enrolled",
+        "Authority": "enabled",
+        "CredentialState": "valid",
+        "NodeState": "active",
+        "Scope": {
+          "AudienceID": "lab-fixture-01",
+          "OperationID": "lab.set_marker",
+          "IntentDigest": "1313131313131313131313131313131313131313131313131313131313131313"
+        },
+        "Chain": [],
+        "Context": [],
+        "Sources": [
+          {
+            "SourceID": "lifecycle-01",
+            "ContractDigest": "2323232323232323232323232323232323232323232323232323232323232323",
+            "EvidenceDigest": "3333333333333333333333333333333333333333333333333333333333333333",
+            "Kind": "lifecycle",
+            "Revision": 12,
+            "ObservedUnixNS": 1900000000000000000,
+            "ValidatedUnixNS": 1900000000000000000,
+            "ValidFromUnixNS": 1900000000000000000,
+            "ExpiresUnixNS": 1900000060000000000,
+            "BoundID": "age5",
+            "EvidenceScope": "modeled"
+          },
+          {
+            "SourceID": "mapping-01",
+            "ContractDigest": "2222222222222222222222222222222222222222222222222222222222222222",
+            "EvidenceDigest": "3232323232323232323232323232323232323232323232323232323232323232",
+            "Kind": "mapping",
+            "Revision": 7,
+            "ObservedUnixNS": 1900000000000000000,
+            "ValidatedUnixNS": 1900000000000000000,
+            "ValidFromUnixNS": 1900000000000000000,
+            "ExpiresUnixNS": 1900000060000000000,
+            "BoundID": "age20",
+            "EvidenceScope": "modeled"
+          },
+          {
+            "SourceID": "profile-01",
+            "ContractDigest": "2121212121212121212121212121212121212121212121212121212121212121",
+            "EvidenceDigest": "3131313131313131313131313131313131313131313131313131313131313131",
+            "Kind": "profile",
+            "Revision": 1,
+            "ObservedUnixNS": 1900000000000000000,
+            "ValidatedUnixNS": 1900000000000000000,
+            "ValidFromUnixNS": 1900000000000000000,
+            "ExpiresUnixNS": 1900000060000000000,
+            "BoundID": "age20",
+            "EvidenceScope": "modeled"
+          }
+        ],
+        "EffectiveValidFromUnixNS": 1900000000000000000,
+        "EffectiveExpiresUnixNS": 1900000005000000000,
+        "EvidenceLane": "modeled"
+      },
+      "note": "Explicit absent-instance syntax witness. Retained instance-required granularity means this is NOT an eligibility positive.",
+      "tlv_witness": [
+        {
+          "tag": 1,
+          "offset": 0,
+          "length": 30,
+          "header_hex": "00010000001e",
+          "value_hex": "0000001a6b61672e6964656e746974792d70726f6a656374696f6e2f7631"
+        },
+        {
+          "tag": 2,
+          "offset": 36,
+          "length": 28,
+          "header_hex": "00020000001c",
+          "value_hex": "000000186b61672e6964656e746974792d736e617073686f742f7631"
+        },
+        {
+          "tag": 3,
+          "offset": 70,
+          "length": 11,
+          "header_hex": "00030000000b",
+          "value_hex": "0000000774727573742d61"
+        },
+        {
+          "tag": 4,
+          "offset": 87,
+          "length": 14,
+          "header_hex": "00040000000e",
+          "value_hex": "0000000a636572742d6c6f63616c"
+        },
+        {
+          "tag": 5,
+          "offset": 107,
+          "length": 80,
+          "header_hex": "000500000050",
+          "value_hex": "0000004c636572742d7368613235363a31313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131"
+        },
+        {
+          "tag": 6,
+          "offset": 193,
+          "length": 32,
+          "header_hex": "000600000020",
+          "value_hex": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        {
+          "tag": 7,
+          "offset": 231,
+          "length": 32,
+          "header_hex": "000700000020",
+          "value_hex": "1212121212121212121212121212121212121212121212121212121212121212"
+        },
+        {
+          "tag": 8,
+          "offset": 269,
+          "length": 8,
+          "header_hex": "000800000008",
+          "value_hex": "0000000000000001"
+        },
+        {
+          "tag": 9,
+          "offset": 283,
+          "length": 8,
+          "header_hex": "000900000008",
+          "value_hex": "1a5e27eef13e0000"
+        },
+        {
+          "tag": 10,
+          "offset": 297,
+          "length": 8,
+          "header_hex": "000a00000008",
+          "value_hex": "1a5e27fce9855800"
+        },
+        {
+          "tag": 11,
+          "offset": 311,
+          "length": 8,
+          "header_hex": "000b00000008",
+          "value_hex": "1a5e27fce9855800"
+        },
+        {
+          "tag": 12,
+          "offset": 325,
+          "length": 8,
+          "header_hex": "000c00000008",
+          "value_hex": "1a5e27eeb5a33600"
+        },
+        {
+          "tag": 13,
+          "offset": 339,
+          "length": 8,
+          "header_hex": "000d00000008",
+          "value_hex": "1a5e27fce9855800"
+        },
+        {
+          "tag": 14,
+          "offset": 353,
+          "length": 7,
+          "header_hex": "000e00000007",
+          "value_hex": "00000003742d61"
+        },
+        {
+          "tag": 15,
+          "offset": 366,
+          "length": 7,
+          "header_hex": "000f00000007",
+          "value_hex": "00000003612d31"
+        },
+        {
+          "tag": 16,
+          "offset": 379,
+          "length": 9,
+          "header_hex": "001000000009",
+          "value_hex": "000000056167656e74"
+        },
+        {
+          "tag": 17,
+          "offset": 394,
+          "length": 21,
+          "header_hex": "001100000015",
+          "value_hex": "00000011696e7374616e63652d7265717569726564"
+        },
+        {
+          "tag": 18,
+          "offset": 421,
+          "length": 1,
+          "header_hex": "001200000001",
+          "value_hex": "00"
+        },
+        {
+          "tag": 19,
+          "offset": 428,
+          "length": 10,
+          "header_hex": "00130000000a",
+          "value_hex": "00000006646972656374"
+        },
+        {
+          "tag": 20,
+          "offset": 444,
+          "length": 7,
+          "header_hex": "001400000007",
+          "value_hex": "000000036f2d31"
+        },
+        {
+          "tag": 21,
+          "offset": 457,
+          "length": 13,
+          "header_hex": "00150000000d",
+          "value_hex": "00000009666f7262696464656e"
+        },
+        {
+          "tag": 22,
+          "offset": 476,
+          "length": 1,
+          "header_hex": "001600000001",
+          "value_hex": "00"
+        },
+        {
+          "tag": 23,
+          "offset": 483,
+          "length": 8,
+          "header_hex": "001700000008",
+          "value_hex": "0000000000000007"
+        },
+        {
+          "tag": 24,
+          "offset": 497,
+          "length": 8,
+          "header_hex": "001800000008",
+          "value_hex": "000000000000000c"
+        },
+        {
+          "tag": 25,
+          "offset": 511,
+          "length": 8,
+          "header_hex": "001900000008",
+          "value_hex": "0000000000000003"
+        },
+        {
+          "tag": 26,
+          "offset": 525,
+          "length": 8,
+          "header_hex": "001a00000008",
+          "value_hex": "0000000000000001"
+        },
+        {
+          "tag": 27,
+          "offset": 539,
+          "length": 12,
+          "header_hex": "001b0000000c",
+          "value_hex": "00000008656e726f6c6c6564"
+        },
+        {
+          "tag": 28,
+          "offset": 557,
+          "length": 11,
+          "header_hex": "001c0000000b",
+          "value_hex": "00000007656e61626c6564"
+        },
+        {
+          "tag": 29,
+          "offset": 574,
+          "length": 9,
+          "header_hex": "001d00000009",
+          "value_hex": "0000000576616c6964"
+        },
+        {
+          "tag": 30,
+          "offset": 589,
+          "length": 10,
+          "header_hex": "001e0000000a",
+          "value_hex": "00000006616374697665"
+        },
+        {
+          "tag": 31,
+          "offset": 605,
+          "length": 86,
+          "header_hex": "001f00000056",
+          "value_hex": "0001000000120000000e6c61622d666978747572652d30310002000000120000000e6c61622e7365745f6d61726b65720003000000201313131313131313131313131313131313131313131313131313131313131313"
+        },
+        {
+          "tag": 32,
+          "offset": 697,
+          "length": 4,
+          "header_hex": "002000000004",
+          "value_hex": "00000000"
+        },
+        {
+          "tag": 33,
+          "offset": 707,
+          "length": 4,
+          "header_hex": "002100000004",
+          "value_hex": "00000000"
+        },
+        {
+          "tag": 34,
+          "offset": 717,
+          "length": 670,
+          "header_hex": "00220000029e",
+          "value_hex": "000000030001000000da0001000000100000000c6c6966656379636c652d30310002000000202323232323232323232323232323232323232323232323232323232323232323000300000020333333333333333333333333333333333333333333333333333333333333333300040000000d000000096c6966656379636c65000500000008000000000000000c0006000000081a5e27eef13e00000007000000081a5e27eef13e00000008000000081a5e27eef13e00000009000000081a5e27fce9855800000a000000080000000461676535000b0000000b000000076d6f64656c65640001000000d700010000000e0000000a6d617070696e672d30310002000000202222222222222222222222222222222222222222222222222222222222222222000300000020323232323232323232323232323232323232323232323232323232323232323200040000000b000000076d617070696e6700050000000800000000000000070006000000081a5e27eef13e00000007000000081a5e27eef13e00000008000000081a5e27eef13e00000009000000081a5e27fce9855800000a00000009000000056167653230000b0000000b000000076d6f64656c65640001000000d700010000000e0000000a70726f66696c652d30310002000000202121212121212121212121212121212121212121212121212121212121212121000300000020313131313131313131313131313131313131313131313131313131313131313100040000000b0000000770726f66696c6500050000000800000000000000010006000000081a5e27eef13e00000007000000081a5e27eef13e00000008000000081a5e27eef13e00000009000000081a5e27fce9855800000a00000009000000056167653230000b0000000b000000076d6f64656c6564"
+        },
+        {
+          "tag": 35,
+          "offset": 1393,
+          "length": 8,
+          "header_hex": "002300000008",
+          "value_hex": "1a5e27eef13e0000"
+        },
+        {
+          "tag": 36,
+          "offset": 1407,
+          "length": 8,
+          "header_hex": "002400000008",
+          "value_hex": "1a5e27f01b43f200"
+        },
+        {
+          "tag": 37,
+          "offset": 1421,
+          "length": 11,
+          "header_hex": "00250000000b",
+          "value_hex": "000000076d6f64656c6564"
+        }
+      ],
+      "negative_decoder_checks": {
+        "trailing": "trailing record bytes",
+        "truncated": "field length/truncation",
+        "oversize_8193": "record bound",
+        "missing_last": "missing/truncated record field",
+        "duplicate_tag": "unknown/duplicate/reordered tag",
+        "unknown_tag": "unknown/duplicate/reordered tag",
+        "reordered_tag": "unknown/duplicate/reordered tag",
+        "domain_inner_length_mismatch": "inner text length",
+        "optional_invalid_presence": "optional instance presence",
+        "negative_timestamp": "timestamp length/sign",
+        "source_count_9": "source count bound",
+        "source_wire_order_reversed": "source canonical order/duplicate",
+        "nested_source_unknown_tag": "unknown/duplicate/reordered tag"
+      },
+      "reversed_source_input_same_bytes": true
+    }
+  ]
+}

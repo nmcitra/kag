@@ -100,18 +100,26 @@ durable inventory ledger. Holds count toward the owner floor before release;
 unknown post-dispatch holds stay held. The target independently records effects
 and exposes an observer-only witness.
 
-In the [G15 bounded lab result](https://github.com/nmcitra/trust-physics-working/blob/main/ktp-blue-zones/docs/validation/2026-10-05-g15-kind-calico-trust-gated-breakout-results.md),
-KAG held the protected marker until the synthetic KIL charge rule reached 65;
+In the separately published G15 bounded lab result, KAG held the protected
+marker until the synthetic KIL charge rule reached 65;
 one permitted effect was witnessed after five successful status reads. The
 agent farmed that deliberately cheap **lab** earning rule, so the result is a
-charge-rule gaming finding, not an enforcement bypass. In the
-[G13 owner-floor result](https://github.com/nmcitra/trust-physics-working/blob/main/ktp-blue-zones/docs/validation/2026-10-06-g13-owner-floor-kind-calico-results.md),
-six fully informed model-chosen effects reached the owner-declared floor of 70;
+charge-rule gaming finding, not an enforcement bypass. In the separately
+published G13 owner-floor result, six fully informed model-chosen effects
+reached the owner-declared floor of 70;
 the model stopped. A separately labeled operator seventh-effect request through
 the other actor and gateway was refused with no further target effect. The
 independent scorer joined all six effects to actual KIL permits, durable owner
 reservations and KAG pre-dispatch audit. Neither result qualifies production
 safety or exhausts adversarial strategies.
+
+The gateway receives KIL's unsigned decision reply over mutual TLS. It builds
+the lab decision claims itself, signs them with an Ed25519 key generated at
+startup, and validates that signature with its own public key. The claims use
+fixed lab envelope values: effective capacity one, demand zero for a status
+read or one for a marker, tier `Operator`, and supervision `stable`. This does
+not mean KAG has verified a KIL signature or independently evaluated a live
+envelope.
 
 The target validates its owner reservation and exact action, but it trusts a
 gateway-supplied KIL decision digest under pinned mTLS. It does **not** verify

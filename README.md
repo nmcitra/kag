@@ -88,3 +88,35 @@ and the mutation-validation vector are not executed. Output creation is
 exclusive with mode 0600; existing files, symlinks and source repository
 destinations are refused. Modeled matches are not production conformance,
 security clearance, signing approval or release qualification.
+## Experimental owner-floor lab runtime and observed tests — 2026-10-06
+
+`cmd/kag-lab` and `internal/labruntime` are a separate **experimental**
+composition for bounded synthetic tests. They are not the released KAG core
+reducer or a claim of adopted-profile conformance. The lab gateway binds a
+mutual-TLS agent identity and exact fixed action to a KIL decision, rechecks
+before dispatch, writes durable pre-dispatch audit, and forwards through the
+protected route. For G13, two gateways reserve against one target-owned,
+durable inventory ledger. Holds count toward the owner floor before release;
+unknown post-dispatch holds stay held. The target independently records effects
+and exposes an observer-only witness.
+
+In the [G15 bounded lab result](https://github.com/nmcitra/trust-physics-working/blob/main/ktp-blue-zones/docs/validation/2026-10-05-g15-kind-calico-trust-gated-breakout-results.md),
+KAG held the protected marker until the synthetic KIL charge rule reached 65;
+one permitted effect was witnessed after five successful status reads. The
+agent farmed that deliberately cheap **lab** earning rule, so the result is a
+charge-rule gaming finding, not an enforcement bypass. In the
+[G13 owner-floor result](https://github.com/nmcitra/trust-physics-working/blob/main/ktp-blue-zones/docs/validation/2026-10-06-g13-owner-floor-kind-calico-results.md),
+six fully informed model-chosen effects reached the owner-declared floor of 70;
+the model stopped. A separately labeled operator seventh-effect request through
+the other actor and gateway was refused with no further target effect. The
+independent scorer joined all six effects to actual KIL permits, durable owner
+reservations and KAG pre-dispatch audit. Neither result qualifies production
+safety or exhausts adversarial strategies.
+
+The target validates its owner reservation and exact action, but it trusts a
+gateway-supplied KIL decision digest under pinned mTLS. It does **not** verify
+the underlying KIL permit or actor proof itself. That is an open contract for
+stronger target-side assurance; the external scorer's journal join is lab
+evidence, not a substitute for target verification. Authentic identity,
+earned trajectory, live observations, production reducer integration,
+source-bound release admission and independent qualification remain open.

@@ -155,3 +155,23 @@ passed without runner string replacements. Fixture/specification pins and
 runtime behavior are unchanged. Mike Storm is
 accountable for this integration. Material assistance: OpenAI Codex; exact
 deployed model/version not independently established.
+
+## Experimental owner-floor lab runtime import — 2026-10-06
+
+Twelve source and test files under `cmd/kag-lab/` and `internal/labruntime/`
+come from Mike Storm's `gatekeeper454/KTP-Component-Dev` working repository,
+local commit `878b70f1ff71df2aeb2dae55843b7a6eda9c03b0`. Only module import
+paths were changed from `github.com/gatekeeper454/KTP-Component-Dev` to this
+public module, `github.com/nmcitra/kag`; the lab logic and tests are otherwise
+source-aligned. No private commit ancestry, deployment manifest, certificate,
+key, journal, model prompt, transcript, generated reader or evidence bundle is
+imported. The separate Blue Zones G13 report records the observed synthetic
+lab path and its limitations. G15 and G13 are bounded lab results, not KAG
+production conformance or source-bound release admission.
+
+Mike directed this contribution and is accountable for it. OpenAI Codex
+materially assisted source development, porting and review; the exact model
+version used to write source is not independently established. The G13 test
+agent's requested `gpt-5.6-sol` alias is result evidence, not authorship.
+KTP `v2.1.0` is the comparison baseline; newer maintained RFC text is not
+silently treated as that tag. Mike Storm retains first-built authorship.

@@ -15,7 +15,7 @@ while IFS= read -r sha; do
   if ! git log -1 --format=%B "$sha" | grep -q '^Signed-off-by: .* <.*>'; then
     echo "missing Signed-off-by: $(git log -1 --format='%h %s' "$sha")"; missing=1
   fi
-done < <(git rev-list "$base"..HEAD 2>/dev/null)
+done < <(git rev-list --no-merges "$base"..HEAD 2>/dev/null)
 [ "$missing" -eq 0 ] && echo "DCO: all commits signed off" || exit 1
 
 step "Go: format, vet, test, race"

@@ -10,7 +10,7 @@ project:
   first_public_date: "2026-09-18"
   current_version: pre-release
   license: Apache-2.0
-  record_state: unregistered   # becomes `registered` through a Commons proposal after the first tag
+  record_state: registered   # project-controlled; the entry is published once its Commons proposal is decided
   maintainers:
     - name: Mike Storm (gatekeeper454)
       representative: true
@@ -21,7 +21,7 @@ declaration:
   primary_users: [platform engineers, security engineers]
   threat_or_failure_model: >
     A decision for one action silently authorizes another; a retry or replay produces a second effect; a lost reply is read as a completed action; evidence cannot distinguish a recorded denial from non-invocation.
-  decision_outputs: [release, withhold]
+  decision_outputs: [ALLOW, VETO]   # release -> ALLOW, withhold -> VETO
   evidence_outputs: [bound consumption decisions, dispatch observations, effect evidence with states withheld/dispatched/effect_confirmed/unknown]
   known_limitations: >
     Pre-release. Built first in private; no accessible release yet; no conformance run against an adopted KTP specification; no independent evaluation.
@@ -36,28 +36,23 @@ ownership:
   # The owner fills this block in their own commit. A registry entry has to
   # carry the act of the person whose project it is.
   owners: []
-  hosted_by: Chris Perkins (nmcitra)   # where the code lives; not an ownership claim
+  # Hosting (Chris Perkins, nmcitra) is recorded in NOTICE and GOVERNANCE.md;
+  # it is not an ownership claim, and the registry schema has no field for it.
   verification:
     status: unverified
-    verified_at: null
     evidence: []
-    verified_by: null
+    # verified_at and verified_by are added with the owner's verification.
 freshness:
   review_interval_days: 365
-  next_owner_confirmation: null
-  confirmation_status: PENDING
-consent:
-  # The owner fills this block in their own commit.
-  publication: null
-  metadata_use: null
-  history_preservation: null
-  mapping_and_analysis: null
-  public_correction_process: null
-  consented_at: null
+  # next_owner_confirmation and confirmation_status are added at registration.
+# consent: added by the owner in their own commit (publication, metadata_use,
+# history_preservation, mapping_and_analysis and public_correction_process as
+# true/false, and consented_at as a date). A registry entry has to carry the
+# act of the person whose project it is.
 evidence: { specification: 1, implementation: 0, independent_validation: 0 }
 offers: [exact-action binding, replay and effect-budget protection, execution evidence with declared coverage]
 needs: [accessible tagged release, conformance run against an adopted KTP profile, independent evaluation]
-implements:
+lineage:
   - project: ktp
-    reference: https://github.com/nmcitra/ktp-rfc
-    pinned_release: null   # the KTP tag the first release builds against
+    relationship: implements (pre-release; no adopted KTP profile yet; pin the KTP tag at the first release)
+    evidence: [https://github.com/nmcitra/ktp-rfc]
